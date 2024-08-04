@@ -1,0 +1,32 @@
+[
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduccción",
+    "section": "",
+    "text": "Desde su establecimiento en 1957, el Centro Latinoamericano y Caribeño de Demografía (CELADE), actualmente conocido como la CELADE-División de Población de la CEPAL, ha desempeñado un papel fundamental al proporcionar capacitación avanzada en análisis demográfico, desarrollo y avances metodológicos para las estimaciones y proyecciones de la población, así como en la difusión de estos resultados. A lo largo de su trayectoria, la Divisiónel CELADE ha publicado diversos informes y herramientas que han contribuido al conocimiento demográfico en la región.\nEn 1968, el CELADE inició la serie de Boletines Demográficos, los cuales brindan información sobre estimaciones y proyecciones de la región elaboradas mediante el método Método de componente Componente Demográficos porde cohorteCohortes (MCDC). En la actualidad, esta serie ha sido reemplazada por el Observatorio Demográfico, una publicación anual que sigue siendo una referencia importante en la actualidad.para el análisis de la dinámica demográfica de la región.\nEntre sus publicaciones destacadas se encuentra la compilación “Métodos para Proyecciones Demográficas” de 1984, que recopila los principales métodos utilizados entonces por el CELADE para la elaboración de proyecciones en la región. Con la generalización del uso de los microcomputadores en los años 80, el CELADE también difundió la aplicación de los métodos de proyección mediante programas informáticos. El PRODEM fue el primer programa ampliamente utilizado. En su segunda versión de 1991, ofrecía un conjunto de métodos demográficos y matemáticos para la elaboración de proyecciones de población nacionales y subnacionales, que requerían datos en edades quinquenales y años terminados en 0 y 5. En este contexto, se destaca la creación de PRODEX, en 2009, una herramienta que combinaba las funcionalidades del PRODEM con la interfaz más común de las planillas de cálculo de Excel. Además de su interfaz más sencilla, el programa permitía realizar proyecciones por año calendario y edades simples, lo cual representó un avance significativo en la región.\nEn línea con el compromiso de difundir y facilitar el acceso a los métodos de proyección y sus aplicaciones, el presente manual tiene como objetivo actualizar los métodos de estimación y proyección por extrapolación matemática utilizados en la región por el CELADEla División de Población de la CEPAL. Asimismo, se presenta la implementación de todo el proceso en el lenguaje de programación “R”, con un enfoque en el análisis estadístico y utilizando software de código abierto. Aunque el uso de programación “R” puede requerir un nivel de aprendizaje adicional en comparación con los programas previamente desarrollados, ofrece ventajas en términos de velocidad y capacidad de procesamiento de grandes volúmenes de datos. Además, el uso de un lenguaje de programación permite la fácil implementación de métodos que requieren un mayor esfuerzo y complejidad computacional.\nCon el objetivo de mantener la accesibilidad para todos los usuarios, este manual también proporcionará opciones para la aplicación de los métodos utilizando las herramientas de Excel, siempre que sea posible. De esta manera, se busca brindar opciones flexibles y adaptadas a diferentes niveles de habilidad y recursos disponibles.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduccción</span>"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Estimaciones y proyecciones de población en América Latina",
+    "section": "",
+    "text": "Prefacio\nEste es un libro hecho en quarto.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Prefacio"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  }
+]
