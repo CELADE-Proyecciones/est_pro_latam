@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://r4ds.hadley.nz/index.html</loc>
-    <lastmod>2024-08-04T08:29:21.537Z</lastmod>
+    <loc>https://www.cepal.org/es/acerca-de-poblacion-y-desarrollo/index.html</loc>
+    <lastmod>2024-08-04T18:33:56.752Z</lastmod>
   </url>
   <url>
-    <loc>https://r4ds.hadley.nz/intro.html</loc>
-    <lastmod>2024-08-04T07:04:33.310Z</lastmod>
+    <loc>https://www.cepal.org/es/acerca-de-poblacion-y-desarrollo/intro.html</loc>
+    <lastmod>2024-08-04T21:58:56.092Z</lastmod>
   </url>
   <url>
-    <loc>https://r4ds.hadley.nz/summary.html</loc>
+    <loc>https://www.cepal.org/es/acerca-de-poblacion-y-desarrollo/1_mcdc.html</loc>
+    <lastmod>2024-08-04T21:53:56.815Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.cepal.org/es/acerca-de-poblacion-y-desarrollo/2_datos_concil.html</loc>
+    <lastmod>2024-08-04T21:07:05.754Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.cepal.org/es/acerca-de-poblacion-y-desarrollo/2.1_datos.html</loc>
+    <lastmod>2024-08-04T19:40:59.477Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.cepal.org/es/acerca-de-poblacion-y-desarrollo/2.2_est_pro.html</loc>
+    <lastmod>2024-08-04T19:46:49.746Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.cepal.org/es/acerca-de-poblacion-y-desarrollo/2.3_conciliacion.html</loc>
+    <lastmod>2024-08-04T19:54:36.582Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.cepal.org/es/acerca-de-poblacion-y-desarrollo/references.html</loc>
+    <lastmod>2024-08-04T20:31:34.356Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.cepal.org/es/acerca-de-poblacion-y-desarrollo/summary.html</loc>
     <lastmod>2024-08-04T07:04:33.313Z</lastmod>
-  </url>
-  <url>
-    <loc>https://r4ds.hadley.nz/references.html</loc>
-    <lastmod>2024-08-04T07:04:33.312Z</lastmod>
   </url>
 </urlset>

@@ -10,11 +10,11 @@
     ]
   },
   {
-    "objectID": "index.html#acknowledgements",
-    "href": "index.html#acknowledgements",
+    "objectID": "index.html#agradecimientos",
+    "href": "index.html#agradecimientos",
     "title": "Manual de Estimaciones y Proyecciones de Población en América Latina",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nEPL is hosted by https://www.netlify.com as part of their support of open source software and communities.",
+    "section": "Agradecimientos",
+    "text": "Agradecimientos\nEPL is hosted by https://www.netlify.com as part of their support of open source software and communities.",
     "crumbs": [
       "Prefacio"
     ]
@@ -22,21 +22,98 @@
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduccción",
+    "title": "Introduccción",
     "section": "",
-    "text": "Desde su establecimiento en 1957, el Centro Latinoamericano y Caribeño de Demografía (CELADE), actualmente conocido como la CELADE-División de Población de la CEPAL, ha desempeñado un papel fundamental al proporcionar capacitación avanzada en análisis demográfico, desarrollo y avances metodológicos para las estimaciones y proyecciones de la población, así como en la difusión de estos resultados. A lo largo de su trayectoria, la Divisiónel CELADE ha publicado diversos informes y herramientas que han contribuido al conocimiento demográfico en la región.\nEn 1968, el CELADE inició la serie de Boletines Demográficos, los cuales brindan información sobre estimaciones y proyecciones de la región elaboradas mediante el método Método de componente Componente Demográficos porde cohorteCohortes (MCDC). En la actualidad, esta serie ha sido reemplazada por el Observatorio Demográfico, una publicación anual que sigue siendo una referencia importante en la actualidad.para el análisis de la dinámica demográfica de la región.\nEntre sus publicaciones destacadas se encuentra la compilación “Métodos para Proyecciones Demográficas” de 1984, que recopila los principales métodos utilizados entonces por el CELADE para la elaboración de proyecciones en la región. Con la generalización del uso de los microcomputadores en los años 80, el CELADE también difundió la aplicación de los métodos de proyección mediante programas informáticos. El PRODEM fue el primer programa ampliamente utilizado. En su segunda versión de 1991, ofrecía un conjunto de métodos demográficos y matemáticos para la elaboración de proyecciones de población nacionales y subnacionales, que requerían datos en edades quinquenales y años terminados en 0 y 5. En este contexto, se destaca la creación de PRODEX, en 2009, una herramienta que combinaba las funcionalidades del PRODEM con la interfaz más común de las planillas de cálculo de Excel. Además de su interfaz más sencilla, el programa permitía realizar proyecciones por año calendario y edades simples, lo cual representó un avance significativo en la región.\nEn línea con el compromiso de difundir y facilitar el acceso a los métodos de proyección y sus aplicaciones, el presente manual tiene como objetivo actualizar los métodos de estimación y proyección por extrapolación matemática utilizados en la región por el CELADEla División de Población de la CEPAL. Asimismo, se presenta la implementación de todo el proceso en el lenguaje de programación “R”, con un enfoque en el análisis estadístico y utilizando software de código abierto. Aunque el uso de programación “R” puede requerir un nivel de aprendizaje adicional en comparación con los programas previamente desarrollados, ofrece ventajas en términos de velocidad y capacidad de procesamiento de grandes volúmenes de datos. Además, el uso de un lenguaje de programación permite la fácil implementación de métodos que requieren un mayor esfuerzo y complejidad computacional.\nCon el objetivo de mantener la accesibilidad para todos los usuarios, este manual también proporcionará opciones para la aplicación de los métodos utilizando las herramientas de Excel, siempre que sea posible. De esta manera, se busca brindar opciones flexibles y adaptadas a diferentes niveles de habilidad y recursos disponibles.\n\n1 + 1\n\n[1] 2",
+    "text": "Desde su establecimiento en 1957, el Centro Latinoamericano y Caribeño de Demografía (CELADE), actualmente conocido como la CELADE-División de Población de la CEPAL, ha desempeñado un papel fundamental al proporcionar capacitación en análisis demográfico, desarrollo y avances metodológicos para las estimaciones y proyecciones de la población, así como en la difusión de estos resultados. A lo largo de su trayectoria, el CELADE ha publicado diversos informes y herramientas que han contribuido al conocimiento demográfico en la región.\nEn 1968, el CELADE inició la serie de Boletines Demográficos, los cuales brindan información sobre estimaciones y proyecciones de la región elaboradas mediante el Método de Componente Demográficos por Cohortes (MCDC). En la actualidad, esta serie ha sido reemplazada por el Observatorio Demográfico, una publicación anual que sigue siendo una referencia importante para el análisis de la dinámica demográfica de la región.\nEntre sus publicaciones destacadas se encuentra la compilación “Métodos para Proyecciones Demográficas” de 1984, que recopila los principales métodos utilizados entonces por el CELADE para la elaboración de proyecciones en la región. Con la generalización del uso de los microcomputadores en los años 80, el CELADE también difundió la aplicación de los métodos de proyección mediante programas informáticos. El PRODEM fue el primer programa ampliamente utilizado. En su segunda versión de 1991, ofrecía un conjunto de métodos demográficos y matemáticos para la elaboración de proyecciones de población nacionales y subnacionales, que requerían datos en edades quinquenales y años terminados en 0 y 5. En este contexto, se destaca la creación de PRODEX, en 2009, una herramienta que combinaba las funcionalidades del PRODEM con la interfaz más común de las planillas de cálculo de Excel. Además de su interfaz más sencilla, el programa permitía realizar proyecciones por año calendario y edades simples, lo cual representó un avance significativo en la región.\nEn línea con el compromiso de difundir y facilitar el acceso a los métodos de proyección y sus aplicaciones, el presente manual tiene como objetivo actualizar los métodos de estimación y proyección utilizados en la región por el CELADE. Asimismo, se presenta la implementación de todo el proceso en el lenguaje de programación “R”, con un enfoque en el análisis estadístico y utilizando software de código abierto. Aunque el uso de programación “R” puede requerir un nivel de aprendizaje adicional en comparación con los programas previamente desarrollados, ofrece ventajas en términos de velocidad y capacidad de procesamiento de grandes volúmenes de datos. Además, el uso de un lenguaje de programación permite la fácil implementación de métodos que requieren un mayor esfuerzo y complejidad computacional.\nCon el objetivo de mantener la accesibilidad para todos los usuarios, este manual también proporcionará opciones para la aplicación de los métodos utilizando las herramientas de Excel, siempre que sea posible. De esta manera, se busca brindar opciones flexibles y adaptadas a diferentes niveles de habilidad y recursos disponibles.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduccción</span>"
+      "Introduccción"
+    ]
+  },
+  {
+    "objectID": "1_mcdc.html",
+    "href": "1_mcdc.html",
+    "title": "1  El Método de Componentes Demográficos por Cohortes (MCDC)",
+    "section": "",
+    "text": "1.1 Subtitle\nEl modelo estima y proyecta la población por sexo y edad, incorporando la evolución de los tres componentes determinantes de la dinámica poblacional: mortalidad, fecundidad y migración. Para ello, se utiliza la ecuación compensadora correspondiente a cada sexo y edad (Knuth 1984).\n\\[\nN^{t+1}=N^t+B^{t, t+1}-D^{t, t+1}+I^{t+1}-E^{t+1}\n\\]\ndonde:\n\\(N^{t+1}\\) = la población inicial estimada al 1 de enero;\n\\(N^t\\) = la población estimada por el modelo al 1 de enero en \\(t+1\\);\n\\(B^{t, t+1}\\) = los nacimientos de mujeres en edad fértil, ocurridos en el año;\n\\(D^{t, t+1}\\) = las defunciones ocurridas a lo largo del período \\(t, t+1\\);\n\\(I^{t+1}\\) y \\(E^{t+1}\\) = el total de inmigrantes y de emigrantes, respectivamente, al final del período \\(t+1\\).\nPara la aplicación del método, se requieren los siguientes insumos: la población inicial desglosada por sexo y edad, la tasa de supervivencia desglosada por sexo y edad, las tasas específicas de fecundidad por edad y el saldo migratorio internacional desglosado por sexo y edad. Es importante destacar que todos estos insumos deben corresponder a un año calendario.\nPara la determinación de dichos insumos, es necesario establecer las tendencias históricas de los tres componentes demográficos mediante procedimientos de estimación.",
+    "crumbs": [
+      "    I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>El Método de Componentes Demográficos por Cohortes (MCDC)</span>"
+    ]
+  },
+  {
+    "objectID": "1_mcdc.html#subtitle",
+    "href": "1_mcdc.html#subtitle",
+    "title": "1  El Método de Componentes Demográficos por Cohortes (MCDC)",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. «Literate Programming». Comput. J. 27 (2): 97-111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "    I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>El Método de Componentes Demográficos por Cohortes (MCDC)</span>"
+    ]
+  },
+  {
+    "objectID": "2_datos_concil.html",
+    "href": "2_datos_concil.html",
+    "title": "Datos, estimaciones, conciliación y proyección",
+    "section": "",
+    "text": "El tamaño y la composición por sexo y edad de la población base son factores determinantes para las proyecciones de la dinámica poblacional mediante el método de los componentes. Esta población debe ser el resultado de la conciliación de las distribuciones de la población por edad y sexo en los puntos donde se disponga de mayor cantidad de datos (normalmente, los años de los censos demográficos), así como de las estimaciones de mortalidad, fecundidad y migración neta para cada uno de los períodos entre censos.\nPor lo tanto, este proceso requiere una evaluación cuidadosa de todas las estimaciones provenientes de las fuentes de datos disponibles y la elección de estimaciones que representen de manera coherente la evolución demográfica histórica de dicha población.",
+    "crumbs": [
+      "    I. Estimaciones y proyecciones a nivel nacional",
+      "Datos, estimaciones, conciliación y proyección"
+    ]
+  },
+  {
+    "objectID": "2.1_datos.html",
+    "href": "2.1_datos.html",
+    "title": "2  Datos",
+    "section": "",
+    "text": "Antes de iniciar las estimaciones y proyecciones de población, es necesario definir los datos que se utilizarán para determinar la evolución demográfica histórica y, eventualmente, corregir las poblaciones pivotes. Este proceso requiere recopilar fuentes de datos con una atención continua a la cobertura, periodicidad, desagregación y calidad de los datos. Los períodos atípicos, incluyendo las crisis de mortalidad, deben ser cuidadosamente registrados al recopilar datos, ya que representan interrupciones en las tendencias históricas. Estos períodos de ruptura suelen ser temporales y requieren un tratamiento específico o justificaciones adicionales si se van a utilizar en las estimaciones y proyecciones de población.\nAunque es común que los datos provenientes de diversas fuentes diverjan entre sí, las series de datos que se utilizarán para cada componente deben demostrar cierta coherencia, indicando una tendencia y un nivel adecuado del cual se pueda extraer una estimación sintética. En este caso, al igual que con los valores atípicos, la inclusión de series que tienen muchos valores atípicos debe evaluarse con mayor precaución.\nEs importante prestar especial atención a los datos de los sistemas de estadísticas vitales. Estos datos tienen un carácter universal, continuo y primario, y se utilizan ampliamente para corregir los grupos de edad específicos en el Censo, los cuales se sabe que están subestimados. También se utilizan para definir los numeradores de las tasas de mortalidad y los niveles y estructuras de la fecundidad. Sin embargo, esta fuente de datos se ve constantemente afectada por problemas de cobertura y registro tardío, entre otros.",
+    "crumbs": [
+      "    I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Datos</span>"
+    ]
+  },
+  {
+    "objectID": "2.2_est_pro.html",
+    "href": "2.2_est_pro.html",
+    "title": "3  Estimaciones y proyecciones",
+    "section": "",
+    "text": "Utilizando las series de datos correspondientes a cada componente, se calculan estimaciones para el período anterior al inicio de las proyecciones. La definición del período inicial de proyección determinará el uso de las tendencias históricas observadas y a partir de cuándo se proyectarán los componentes basados en suposiciones sobre su comportamiento futuro.\nLas estimaciones deben considerar los datos adecuados del paso anterior para representar la evolución demográfica histórica de cada componente de la población.\nLas proyecciones se basarán en la tendencia histórica y en suposiciones sobre la evolución de los tres componentes demográficos hasta el final del período de proyección. Es importante evaluar cuidadosamente las premisas límite, ya que su influencia en las proyecciones aumenta a medida que nos alejamos del último año estimado.",
+    "crumbs": [
+      "    I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Estimaciones y proyecciones</span>"
+    ]
+  },
+  {
+    "objectID": "2.3_conciliacion.html",
+    "href": "2.3_conciliacion.html",
+    "title": "4  Conciliación Demográfica",
+    "section": "",
+    "text": "Las estimaciones de la dinámica demográfica y las cifras observadas en los censos deben ser coherentes entre sí para generar una dinámica de cohorte consistente, abarcando a toda la población a lo largo del período de proyección. Para lograr esto, es necesario llevar a cabo una conciliación demográfica que resulte en una población base que se utilizará en el método de los componentes.\nLos procedimientos de conciliación tienen como objetivo garantizar la consistencia entre la dinámica demográfica de los períodos intercensales y las estimaciones de los tres componentes demográficos. La conciliación implica:\n\nevaluar la cobertura de cada censo,\ncorregir las distribuciones por sexo y edad de los censos, y\nasegurar la compatibilidad entre la dinámica demográfica intercensal y las estimaciones de fecundidad, mortalidad y migración.\n\nLa diferencia entre la población estimada y la prevista también debe utilizarse en la conciliación demográfica, lo cual puede servir como proceso para calibrar las estimaciones o la población base.",
+    "crumbs": [
+      "    I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Conciliación Demográfica</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Referencias",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "Referencias"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "App. A: Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "Apéndices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Summary</span>"
     ]
   }
 ]
