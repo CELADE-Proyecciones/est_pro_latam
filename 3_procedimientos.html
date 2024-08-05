@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; El Método de Componentes Demográficos por Cohortes (MCDC) – Manual de Estimaciones y Proyecciones de Población en América Latina</title>
+<title>3&nbsp; Procedimientos metodológicos para las estimaciones y proyecciones – Manual de Estimaciones y Proyecciones de Población en América Latina</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -50,8 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./2_datos_concil.html" rel="next">
-<link href="./I_nacional.html" rel="prev">
+<link href="./4_ejem_nac.html" rel="next">
+<link href="./2_datos_concil.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -90,35 +70,6 @@ div.csl-indent {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -131,7 +82,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./I_nacional.html">I. Estimaciones y proyecciones a nivel nacional</a></li><li class="breadcrumb-item"><a href="./1_mcdc.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">El Método de Componentes Demográficos por Cohortes (MCDC)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./I_nacional.html">I. Estimaciones y proyecciones a nivel nacional</a></li><li class="breadcrumb-item"><a href="./3_procedimientos.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Procedimientos metodológicos para las estimaciones y proyecciones</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -187,7 +138,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1_mcdc.html" class="sidebar-item-text sidebar-link active">
+  <a href="./1_mcdc.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">El Método de Componentes Demográficos por Cohortes (MCDC)</span></span></a>
   </div>
 </li>
@@ -199,7 +150,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./3_procedimientos.html" class="sidebar-item-text sidebar-link">
+  <a href="./3_procedimientos.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Procedimientos metodológicos para las estimaciones y proyecciones</span></span></a>
   </div>
 </li>
@@ -279,16 +230,32 @@ window.Quarto = {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#subtitle" id="toc-subtitle" class="nav-link active" data-scroll-target="#subtitle"><span class="header-section-number">1.1</span> Subtitle</a></li>
+  <li><a href="#fecundidad" id="toc-fecundidad" class="nav-link active" data-scroll-target="#fecundidad"><span class="header-section-number">3.1</span> Fecundidad</a>
+  <ul class="collapse">
+  <li><a href="#nivel-de-la-fecundidad" id="toc-nivel-de-la-fecundidad" class="nav-link" data-scroll-target="#nivel-de-la-fecundidad"><span class="header-section-number">3.1.1</span> Nivel de la fecundidad</a></li>
+  <li><a href="#estructura-de-la-fecundidad" id="toc-estructura-de-la-fecundidad" class="nav-link" data-scroll-target="#estructura-de-la-fecundidad"><span class="header-section-number">3.1.2</span> Estructura de la Fecundidad</a></li>
+  </ul></li>
+  <li><a href="#mortalidad" id="toc-mortalidad" class="nav-link" data-scroll-target="#mortalidad"><span class="header-section-number">3.2</span> Mortalidad</a>
+  <ul class="collapse">
+  <li><a href="#tablas-de-mortalidad-completas-pivotes" id="toc-tablas-de-mortalidad-completas-pivotes" class="nav-link" data-scroll-target="#tablas-de-mortalidad-completas-pivotes"><span class="header-section-number">3.2.1</span> Tablas de mortalidad completas pivotes</a></li>
+  <li><a href="#tablas-de-mortalidad-por-año-calendario" id="toc-tablas-de-mortalidad-por-año-calendario" class="nav-link" data-scroll-target="#tablas-de-mortalidad-por-año-calendario"><span class="header-section-number">3.2.2</span> Tablas de mortalidad por año calendario</a></li>
+  <li><a href="#proyección" id="toc-proyección" class="nav-link" data-scroll-target="#proyección"><span class="header-section-number">3.2.3</span> Proyección</a></li>
+  <li><a href="#procedimiento-para-los-años-de-la-covid-19" id="toc-procedimiento-para-los-años-de-la-covid-19" class="nav-link" data-scroll-target="#procedimiento-para-los-años-de-la-covid-19"><span class="header-section-number">3.2.4</span> Procedimiento para los años de la COVID-19</a></li>
+  </ul></li>
+  <li><a href="#migración-internacional" id="toc-migración-internacional" class="nav-link" data-scroll-target="#migración-internacional"><span class="header-section-number">3.3</span> Migración internacional</a>
+  <ul class="collapse">
+  <li><a href="#nivel-de-la-migración-internacional" id="toc-nivel-de-la-migración-internacional" class="nav-link" data-scroll-target="#nivel-de-la-migración-internacional"><span class="header-section-number">3.3.1</span> Nivel de la migración internacional</a></li>
+  <li><a href="#estructura-de-la-migración" id="toc-estructura-de-la-migración" class="nav-link" data-scroll-target="#estructura-de-la-migración"><span class="header-section-number">3.3.2</span> Estructura de la migración</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/CELADE-Proyecciones/est_pro_latam/edit/main/1_mcdc.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/CELADE-Proyecciones/est_pro_latam/issues/new" class="toc-action"><i class="bi empty"></i>Informar de un problema</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/CELADE-Proyecciones/est_pro_latam/edit/main/3_procedimientos.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/CELADE-Proyecciones/est_pro_latam/issues/new" class="toc-action"><i class="bi empty"></i>Informar de un problema</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./I_nacional.html">I. Estimaciones y proyecciones a nivel nacional</a></li><li class="breadcrumb-item"><a href="./1_mcdc.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">El Método de Componentes Demográficos por Cohortes (MCDC)</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./I_nacional.html">I. Estimaciones y proyecciones a nivel nacional</a></li><li class="breadcrumb-item"><a href="./3_procedimientos.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Procedimientos metodológicos para las estimaciones y proyecciones</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">El Método de Componentes Demográficos por Cohortes (MCDC)</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Procedimientos metodológicos para las estimaciones y proyecciones</span></h1>
 </div>
 
 
@@ -305,28 +272,63 @@ window.Quarto = {
 </header>
 
 
-<p>Uno de los métodos más ampliamente utilizado para realizar estimaciones y proyecciones de la población, por sexo y edad, &nbsp;es el Método de Componentes demográfico por Cohortes. Este enfoque se empleaba típicamente para grupos de edad de cinco años y períodos de proyección de cinco años (5x5). No obstante, también es posible aplicar el MCDC &nbsp;por edad individual y año calendario (1x1). Las estimaciones y &nbsp;proyecciones de población 1x1 permite hacer un seguimiento preciso de la evolución de las cohortes en cada año, lo cual proporciona un comportamiento de cohorte más consistente en comparación con las cifras obtenidas 5x5.</p>
-<section id="subtitle" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="subtitle"><span class="header-section-number">1.1</span> Subtitle</h2>
-<p>El modelo estima y proyecta la población por sexo y edad, incorporando la evolución de los tres componentes determinantes de la dinámica poblacional: mortalidad, fecundidad y migración. Para ello, se utiliza la ecuación compensadora correspondiente a cada sexo y edad <span class="citation" data-cites="knuth84">(<a href="references.html#ref-knuth84" role="doc-biblioref">Knuth 1984</a>)</span>.</p>
-<p><span class="math display">\[
-N^{t+1}=N^t+B^{t, t+1}-D^{t, t+1}+I^{t+1}-E^{t+1}
-\]</span></p>
-<p>donde:</p>
-<p><span class="math inline">\(N^{t+1}\)</span> = la población inicial estimada al 1 de enero;</p>
-<p><span class="math inline">\(N^t\)</span> = la población estimada por el modelo al 1 de enero en <span class="math inline">\(t+1\)</span>;</p>
-<p><span class="math inline">\(B^{t, t+1}\)</span> = los nacimientos de mujeres en edad fértil, ocurridos en el año;</p>
-<p><span class="math inline">\(D^{t, t+1}\)</span> = las defunciones ocurridas a lo largo del período <span class="math inline">\(t, t+1\)</span>;</p>
-<p><span class="math inline">\(I^{t+1}\)</span> y <span class="math inline">\(E^{t+1}\)</span> = el total de inmigrantes y de emigrantes, respectivamente, al final del período <span class="math inline">\(t+1\)</span>.</p>
-<p>Para la aplicación del método, se requieren los siguientes insumos: la población inicial desglosada por sexo y edad, la tasa de supervivencia desglosada por sexo y edad, las tasas específicas de fecundidad por edad y el saldo migratorio internacional desglosado por sexo y edad. Es importante destacar que todos estos insumos deben corresponder a un año calendario.</p>
-<p>Para la determinación de dichos insumos, es necesario establecer las tendencias históricas de los tres componentes demográficos mediante procedimientos de estimación.</p>
+<section id="fecundidad" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="fecundidad"><span class="header-section-number">3.1</span> Fecundidad</h2>
+<p>Las estimaciones y proyecciones de fecundidad para cada año se dividen en cuatro pasos:</p>
+<ol type="i">
+<li><p>estimación del nivel general de fecundidad, usualmente medido por la tasa global de fecundidad (TGF), con base en las fuentes de datos disponibles;</p></li>
+<li><p>desglose de las tasas específicas de fecundidad correspondientes a las TGF estimadas previamente, en edades simples (si se encuentran en grupos de cinco años);</p></li>
+<li><p>estimación de la estructura relativa de la fecundidad para el período de estimación y</p></li>
+<li><p>obtención de las tasas específicas de fecundidad (TEF) estimadas.</p></li>
+</ol>
+<p>Es decir, se estima por separado el nivel y la estructura de la fecundidad, para luego combinarlos y obtener las TEF. Esta separación permite, por ejemplo, que los niveles generales de fecundidad cambien a un ritmo diferente al de la estructura de la fecundidad.</p>
+<section id="nivel-de-la-fecundidad" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="nivel-de-la-fecundidad"><span class="header-section-number">3.1.1</span> Nivel de la fecundidad</h3>
+</section>
+<section id="estructura-de-la-fecundidad" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="estructura-de-la-fecundidad"><span class="header-section-number">3.1.2</span> Estructura de la Fecundidad</h3>
+</section>
+</section>
+<section id="mortalidad" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="mortalidad"><span class="header-section-number">3.2</span> Mortalidad</h2>
+<p>Las estimaciones de la mortalidad se dividen en tres pasos:</p>
+<ol type="1">
+<li>la construcción de las tablas de mortalidad completas años pivotes,</li>
+<li>la construcción de tablas de mortalidad anualizadas y</li>
+<li>el cálculo de las relaciones de supervivencia por edad para cada año calendario. Todos los procedimientos deben llevarse a cabo por separado para cada sexo.</li>
+</ol>
+<section id="tablas-de-mortalidad-completas-pivotes" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="tablas-de-mortalidad-completas-pivotes"><span class="header-section-number">3.2.1</span> Tablas de mortalidad completas pivotes</h3>
+</section>
+<section id="tablas-de-mortalidad-por-año-calendario" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="tablas-de-mortalidad-por-año-calendario"><span class="header-section-number">3.2.2</span> Tablas de mortalidad por año calendario</h3>
+</section>
+<section id="proyección" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="proyección"><span class="header-section-number">3.2.3</span> Proyección</h3>
+</section>
+<section id="procedimiento-para-los-años-de-la-covid-19" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="procedimiento-para-los-años-de-la-covid-19"><span class="header-section-number">3.2.4</span> Procedimiento para los años de la COVID-19</h3>
+</section>
+</section>
+<section id="migración-internacional" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="migración-internacional"><span class="header-section-number">3.3</span> Migración internacional</h2>
+<p>A diferencia de la mortalidad y la fecundidad, la migración se ve fuertemente influenciada por los cambios circunstanciales tanto internos como externos al país. Este comportamiento hace que la migración sea especialmente susceptible a variaciones imprevisibles sin una tendencia clara. Además, cabe destacar que la migración es el componente de la población que cuenta con una calidad y disponibilidad de datos más limitada. A pesar de esta dificultad, es posible utilizar ciertos enfoques para considerar la migración en las proyecciones de población.</p>
+<p>La migración se llevará a cabo en dos etapas: proyección del nivel y proyección de la estructura. Para evaluar el nivel de migración, se utilizarán los saldos migratorios al final del período, desglosados por sexo. Por otro lado, para evaluar la estructura de la migración, se utilizarán los saldos distribuidos por sexo y edad.</p>
+<section id="nivel-de-la-migración-internacional" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="nivel-de-la-migración-internacional"><span class="header-section-number">3.3.1</span> Nivel de la migración internacional</h3>
+<p>Los saldos migratorios por sexo pueden ser estimados de manera directa mediante la diferencia entre el número de inmigrantes y el número de emigrantes, o a través de métodos indirectos. Uno de los métodos indirectos más destacados es el método residual, el cual estima la migración neta al calcular la diferencia entre la población esperada en ausencia de migración y la población observada.&nbsp;</p>
+</section>
+<section id="estructura-de-la-migración" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="estructura-de-la-migración"><span class="header-section-number">3.3.2</span> Estructura de la migración</h3>
+<section id="estimaciones" class="level4" data-number="3.3.2.1">
+<h4 data-number="3.3.2.1" class="anchored" data-anchor-id="estimaciones"><span class="header-section-number">3.3.2.1</span> Estimaciones</h4>
+</section>
+<section id="proyecciones" class="level4" data-number="3.3.2.2">
+<h4 data-number="3.3.2.2" class="anchored" data-anchor-id="proyecciones"><span class="header-section-number">3.3.2.2</span> Proyecciones</h4>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-knuth84" class="csl-entry" role="listitem">
-Knuth, Donald E. 1984. <span>«Literate Programming»</span>. <em>Comput. J.</em> 27 (2): 97-111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
-</div>
-</div>
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -752,13 +754,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./I_nacional.html" class="pagination-link" aria-label="I. Estimaciones y proyecciones a nivel nacional">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">I. Estimaciones y proyecciones a nivel nacional</span>
+      <a href="./2_datos_concil.html" class="pagination-link" aria-label="Datos, estimaciones, conciliación y proyección">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Datos, estimaciones, conciliación y proyección</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./2_datos_concil.html" class="pagination-link" aria-label="Datos, estimaciones, conciliación y proyección">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Datos, estimaciones, conciliación y proyección</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./4_ejem_nac.html" class="pagination-link" aria-label="Ejemplo de Aplicación en Excel y R">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ejemplo de Aplicación en Excel y R</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -770,7 +772,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/CELADE-Proyecciones/est_pro_latam/edit/main/1_mcdc.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/CELADE-Proyecciones/est_pro_latam/issues/new" class="toc-action"><i class="bi empty"></i>Informar de un problema</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/CELADE-Proyecciones/est_pro_latam/edit/main/3_procedimientos.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/CELADE-Proyecciones/est_pro_latam/issues/new" class="toc-action"><i class="bi empty"></i>Informar de un problema</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Este libro fue hecho en <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

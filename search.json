@@ -36,7 +36,7 @@
     "section": "",
     "text": "1.1 Subtitle\nEl modelo estima y proyecta la población por sexo y edad, incorporando la evolución de los tres componentes determinantes de la dinámica poblacional: mortalidad, fecundidad y migración. Para ello, se utiliza la ecuación compensadora correspondiente a cada sexo y edad (Knuth 1984).\n\\[\nN^{t+1}=N^t+B^{t, t+1}-D^{t, t+1}+I^{t+1}-E^{t+1}\n\\]\ndonde:\n\\(N^{t+1}\\) = la población inicial estimada al 1 de enero;\n\\(N^t\\) = la población estimada por el modelo al 1 de enero en \\(t+1\\);\n\\(B^{t, t+1}\\) = los nacimientos de mujeres en edad fértil, ocurridos en el año;\n\\(D^{t, t+1}\\) = las defunciones ocurridas a lo largo del período \\(t, t+1\\);\n\\(I^{t+1}\\) y \\(E^{t+1}\\) = el total de inmigrantes y de emigrantes, respectivamente, al final del período \\(t+1\\).\nPara la aplicación del método, se requieren los siguientes insumos: la población inicial desglosada por sexo y edad, la tasa de supervivencia desglosada por sexo y edad, las tasas específicas de fecundidad por edad y el saldo migratorio internacional desglosado por sexo y edad. Es importante destacar que todos estos insumos deben corresponder a un año calendario.\nPara la determinación de dichos insumos, es necesario establecer las tendencias históricas de los tres componentes demográficos mediante procedimientos de estimación.",
     "crumbs": [
-      "    I. Estimaciones y proyecciones a nivel nacional",
+      "I. Estimaciones y proyecciones a nivel nacional",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>El Método de Componentes Demográficos por Cohortes (MCDC)</span>"
     ]
   },
@@ -47,52 +47,206 @@
     "section": "",
     "text": "Knuth, Donald E. 1984. «Literate Programming». Comput. J. 27 (2): 97-111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "    I. Estimaciones y proyecciones a nivel nacional",
+      "I. Estimaciones y proyecciones a nivel nacional",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>El Método de Componentes Demográficos por Cohortes (MCDC)</span>"
     ]
   },
   {
     "objectID": "2_datos_concil.html",
     "href": "2_datos_concil.html",
-    "title": "Datos, estimaciones, conciliación y proyección",
+    "title": "2  Datos, estimaciones, conciliación y proyección",
     "section": "",
-    "text": "El tamaño y la composición por sexo y edad de la población base son factores determinantes para las proyecciones de la dinámica poblacional mediante el método de los componentes. Esta población debe ser el resultado de la conciliación de las distribuciones de la población por edad y sexo en los puntos donde se disponga de mayor cantidad de datos (normalmente, los años de los censos demográficos), así como de las estimaciones de mortalidad, fecundidad y migración neta para cada uno de los períodos entre censos.\nPor lo tanto, este proceso requiere una evaluación cuidadosa de todas las estimaciones provenientes de las fuentes de datos disponibles y la elección de estimaciones que representen de manera coherente la evolución demográfica histórica de dicha población.",
+    "text": "2.1 Datos\nAntes de iniciar las estimaciones y proyecciones de población, es necesario definir los datos que se utilizarán para determinar la evolución demográfica histórica y, eventualmente, corregir las poblaciones pivotes. Este proceso requiere recopilar fuentes de datos con una atención continua a la cobertura, periodicidad, desagregación y calidad de los datos. Los períodos atípicos, incluyendo las crisis de mortalidad, deben ser cuidadosamente registrados al recopilar datos, ya que representan interrupciones en las tendencias históricas. Estos períodos de ruptura suelen ser temporales y requieren un tratamiento específico o justificaciones adicionales si se van a utilizar en las estimaciones y proyecciones de población.\nAunque es común que los datos provenientes de diversas fuentes diverjan entre sí, las series de datos que se utilizarán para cada componente deben demostrar cierta coherencia, indicando una tendencia y un nivel adecuado del cual se pueda extraer una estimación sintética. En este caso, al igual que con los valores atípicos, la inclusión de series que tienen muchos valores atípicos debe evaluarse con mayor precaución.\nEs importante prestar especial atención a los datos de los sistemas de estadísticas vitales. Estos datos tienen un carácter universal, continuo y primario, y se utilizan ampliamente para corregir los grupos de edad específicos en el Censo, los cuales se sabe que están subestimados. También se utilizan para definir los numeradores de las tasas de mortalidad y los niveles y estructuras de la fecundidad. Sin embargo, esta fuente de datos se ve constantemente afectada por problemas de cobertura y registro tardío, entre otros.",
     "crumbs": [
-      "    I. Estimaciones y proyecciones a nivel nacional",
-      "Datos, estimaciones, conciliación y proyección"
+      "I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Datos, estimaciones, conciliación y proyección</span>"
     ]
   },
   {
-    "objectID": "2.1_datos.html",
-    "href": "2.1_datos.html",
-    "title": "2  Datos",
-    "section": "",
-    "text": "Antes de iniciar las estimaciones y proyecciones de población, es necesario definir los datos que se utilizarán para determinar la evolución demográfica histórica y, eventualmente, corregir las poblaciones pivotes. Este proceso requiere recopilar fuentes de datos con una atención continua a la cobertura, periodicidad, desagregación y calidad de los datos. Los períodos atípicos, incluyendo las crisis de mortalidad, deben ser cuidadosamente registrados al recopilar datos, ya que representan interrupciones en las tendencias históricas. Estos períodos de ruptura suelen ser temporales y requieren un tratamiento específico o justificaciones adicionales si se van a utilizar en las estimaciones y proyecciones de población.\nAunque es común que los datos provenientes de diversas fuentes diverjan entre sí, las series de datos que se utilizarán para cada componente deben demostrar cierta coherencia, indicando una tendencia y un nivel adecuado del cual se pueda extraer una estimación sintética. En este caso, al igual que con los valores atípicos, la inclusión de series que tienen muchos valores atípicos debe evaluarse con mayor precaución.\nEs importante prestar especial atención a los datos de los sistemas de estadísticas vitales. Estos datos tienen un carácter universal, continuo y primario, y se utilizan ampliamente para corregir los grupos de edad específicos en el Censo, los cuales se sabe que están subestimados. También se utilizan para definir los numeradores de las tasas de mortalidad y los niveles y estructuras de la fecundidad. Sin embargo, esta fuente de datos se ve constantemente afectada por problemas de cobertura y registro tardío, entre otros.",
+    "objectID": "2_datos_concil.html#estimaciones-y-proyecciones",
+    "href": "2_datos_concil.html#estimaciones-y-proyecciones",
+    "title": "2  Datos, estimaciones, conciliación y proyección",
+    "section": "2.2 Estimaciones y proyecciones",
+    "text": "2.2 Estimaciones y proyecciones\nUtilizando las series de datos correspondientes a cada componente, se calculan estimaciones para el período anterior al inicio de las proyecciones. La definición del período inicial de proyección determinará el uso de las tendencias históricas observadas y a partir de cuándo se proyectarán los componentes basados en suposiciones sobre su comportamiento futuro.\nLas estimaciones deben considerar los datos adecuados del paso anterior para representar la evolución demográfica histórica de cada componente de la población.\nLas proyecciones se basarán en la tendencia histórica y en suposiciones sobre la evolución de los tres componentes demográficos hasta el final del período de proyección. Es importante evaluar cuidadosamente las premisas límite, ya que su influencia en las proyecciones aumenta a medida que nos alejamos del último año estimado.",
     "crumbs": [
-      "    I. Estimaciones y proyecciones a nivel nacional",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Datos</span>"
+      "I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Datos, estimaciones, conciliación y proyección</span>"
     ]
   },
   {
-    "objectID": "2.2_est_pro.html",
-    "href": "2.2_est_pro.html",
-    "title": "3  Estimaciones y proyecciones",
-    "section": "",
-    "text": "Utilizando las series de datos correspondientes a cada componente, se calculan estimaciones para el período anterior al inicio de las proyecciones. La definición del período inicial de proyección determinará el uso de las tendencias históricas observadas y a partir de cuándo se proyectarán los componentes basados en suposiciones sobre su comportamiento futuro.\nLas estimaciones deben considerar los datos adecuados del paso anterior para representar la evolución demográfica histórica de cada componente de la población.\nLas proyecciones se basarán en la tendencia histórica y en suposiciones sobre la evolución de los tres componentes demográficos hasta el final del período de proyección. Es importante evaluar cuidadosamente las premisas límite, ya que su influencia en las proyecciones aumenta a medida que nos alejamos del último año estimado.",
+    "objectID": "2_datos_concil.html#conciliación-demográfica",
+    "href": "2_datos_concil.html#conciliación-demográfica",
+    "title": "2  Datos, estimaciones, conciliación y proyección",
+    "section": "2.3 Conciliación Demográfica",
+    "text": "2.3 Conciliación Demográfica\nLas estimaciones de la dinámica demográfica y las cifras observadas en los censos deben ser coherentes entre sí para generar una dinámica de cohorte consistente, abarcando a toda la población a lo largo del período de proyección. Para lograr esto, es necesario llevar a cabo una conciliación demográfica que resulte en una población base que se utilizará en el método de los componentes.\nLos procedimientos de conciliación tienen como objetivo garantizar la consistencia entre la dinámica demográfica de los períodos intercensales y las estimaciones de los tres componentes demográficos. La conciliación implica:\n\nevaluar la cobertura de cada censo,\ncorregir las distribuciones por sexo y edad de los censos, y\nasegurar la compatibilidad entre la dinámica demográfica intercensal y las estimaciones de fecundidad, mortalidad y migración.\n\nLa diferencia entre la población estimada y la prevista también debe utilizarse en la conciliación demográfica, lo cual puede servir como proceso para calibrar las estimaciones o la población base.",
     "crumbs": [
-      "    I. Estimaciones y proyecciones a nivel nacional",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Estimaciones y proyecciones</span>"
+      "I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Datos, estimaciones, conciliación y proyección</span>"
     ]
   },
   {
-    "objectID": "2.3_conciliacion.html",
-    "href": "2.3_conciliacion.html",
-    "title": "4  Conciliación Demográfica",
+    "objectID": "3_procedimientos.html",
+    "href": "3_procedimientos.html",
+    "title": "3  Procedimientos metodológicos para las estimaciones y proyecciones",
     "section": "",
-    "text": "Las estimaciones de la dinámica demográfica y las cifras observadas en los censos deben ser coherentes entre sí para generar una dinámica de cohorte consistente, abarcando a toda la población a lo largo del período de proyección. Para lograr esto, es necesario llevar a cabo una conciliación demográfica que resulte en una población base que se utilizará en el método de los componentes.\nLos procedimientos de conciliación tienen como objetivo garantizar la consistencia entre la dinámica demográfica de los períodos intercensales y las estimaciones de los tres componentes demográficos. La conciliación implica:\n\nevaluar la cobertura de cada censo,\ncorregir las distribuciones por sexo y edad de los censos, y\nasegurar la compatibilidad entre la dinámica demográfica intercensal y las estimaciones de fecundidad, mortalidad y migración.\n\nLa diferencia entre la población estimada y la prevista también debe utilizarse en la conciliación demográfica, lo cual puede servir como proceso para calibrar las estimaciones o la población base.",
+    "text": "3.1 Fecundidad\nLas estimaciones y proyecciones de fecundidad para cada año se dividen en cuatro pasos:\nEs decir, se estima por separado el nivel y la estructura de la fecundidad, para luego combinarlos y obtener las TEF. Esta separación permite, por ejemplo, que los niveles generales de fecundidad cambien a un ritmo diferente al de la estructura de la fecundidad.",
     "crumbs": [
-      "    I. Estimaciones y proyecciones a nivel nacional",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Conciliación Demográfica</span>"
+      "I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Procedimientos metodológicos para las estimaciones y proyecciones</span>"
+    ]
+  },
+  {
+    "objectID": "3_procedimientos.html#fecundidad",
+    "href": "3_procedimientos.html#fecundidad",
+    "title": "3  Procedimientos metodológicos para las estimaciones y proyecciones",
+    "section": "",
+    "text": "estimación del nivel general de fecundidad, usualmente medido por la tasa global de fecundidad (TGF), con base en las fuentes de datos disponibles;\ndesglose de las tasas específicas de fecundidad correspondientes a las TGF estimadas previamente, en edades simples (si se encuentran en grupos de cinco años);\nestimación de la estructura relativa de la fecundidad para el período de estimación y\nobtención de las tasas específicas de fecundidad (TEF) estimadas.\n\n\n\n3.1.1 Nivel de la fecundidad\n\n\n3.1.2 Estructura de la Fecundidad",
+    "crumbs": [
+      "I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Procedimientos metodológicos para las estimaciones y proyecciones</span>"
+    ]
+  },
+  {
+    "objectID": "3_procedimientos.html#mortalidad",
+    "href": "3_procedimientos.html#mortalidad",
+    "title": "3  Procedimientos metodológicos para las estimaciones y proyecciones",
+    "section": "3.2 Mortalidad",
+    "text": "3.2 Mortalidad\nLas estimaciones de la mortalidad se dividen en tres pasos:\n\nla construcción de las tablas de mortalidad completas años pivotes,\nla construcción de tablas de mortalidad anualizadas y\nel cálculo de las relaciones de supervivencia por edad para cada año calendario. Todos los procedimientos deben llevarse a cabo por separado para cada sexo.\n\n\n3.2.1 Tablas de mortalidad completas pivotes\n\n\n3.2.2 Tablas de mortalidad por año calendario\n\n\n3.2.3 Proyección\n\n\n3.2.4 Procedimiento para los años de la COVID-19",
+    "crumbs": [
+      "I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Procedimientos metodológicos para las estimaciones y proyecciones</span>"
+    ]
+  },
+  {
+    "objectID": "3_procedimientos.html#migración-internacional",
+    "href": "3_procedimientos.html#migración-internacional",
+    "title": "3  Procedimientos metodológicos para las estimaciones y proyecciones",
+    "section": "3.3 Migración internacional",
+    "text": "3.3 Migración internacional\nA diferencia de la mortalidad y la fecundidad, la migración se ve fuertemente influenciada por los cambios circunstanciales tanto internos como externos al país. Este comportamiento hace que la migración sea especialmente susceptible a variaciones imprevisibles sin una tendencia clara. Además, cabe destacar que la migración es el componente de la población que cuenta con una calidad y disponibilidad de datos más limitada. A pesar de esta dificultad, es posible utilizar ciertos enfoques para considerar la migración en las proyecciones de población.\nLa migración se llevará a cabo en dos etapas: proyección del nivel y proyección de la estructura. Para evaluar el nivel de migración, se utilizarán los saldos migratorios al final del período, desglosados por sexo. Por otro lado, para evaluar la estructura de la migración, se utilizarán los saldos distribuidos por sexo y edad.\n\n3.3.1 Nivel de la migración internacional\nLos saldos migratorios por sexo pueden ser estimados de manera directa mediante la diferencia entre el número de inmigrantes y el número de emigrantes, o a través de métodos indirectos. Uno de los métodos indirectos más destacados es el método residual, el cual estima la migración neta al calcular la diferencia entre la población esperada en ausencia de migración y la población observada. \n\n\n3.3.2 Estructura de la migración\n\n3.3.2.1 Estimaciones\n\n\n3.3.2.2 Proyecciones",
+    "crumbs": [
+      "I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Procedimientos metodológicos para las estimaciones y proyecciones</span>"
+    ]
+  },
+  {
+    "objectID": "4_ejem_nac.html",
+    "href": "4_ejem_nac.html",
+    "title": "4  Ejemplo de Aplicación en Excel y R",
+    "section": "",
+    "text": "4.1 Fecundidad",
+    "crumbs": [
+      "I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ejemplo de Aplicación en Excel y R</span>"
+    ]
+  },
+  {
+    "objectID": "4_ejem_nac.html#mortalidad",
+    "href": "4_ejem_nac.html#mortalidad",
+    "title": "4  Ejemplo de Aplicación en Excel y R",
+    "section": "4.2 Mortalidad",
+    "text": "4.2 Mortalidad",
+    "crumbs": [
+      "I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ejemplo de Aplicación en Excel y R</span>"
+    ]
+  },
+  {
+    "objectID": "4_ejem_nac.html#migración",
+    "href": "4_ejem_nac.html#migración",
+    "title": "4  Ejemplo de Aplicación en Excel y R",
+    "section": "4.3 Migración",
+    "text": "4.3 Migración",
+    "crumbs": [
+      "I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ejemplo de Aplicación en Excel y R</span>"
+    ]
+  },
+  {
+    "objectID": "4_ejem_nac.html#proyección-poblacional",
+    "href": "4_ejem_nac.html#proyección-poblacional",
+    "title": "4  Ejemplo de Aplicación en Excel y R",
+    "section": "4.4 Proyección poblacional",
+    "text": "4.4 Proyección poblacional",
+    "crumbs": [
+      "I. Estimaciones y proyecciones a nivel nacional",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ejemplo de Aplicación en Excel y R</span>"
+    ]
+  },
+  {
+    "objectID": "5_dam.html",
+    "href": "5_dam.html",
+    "title": "5  División Administrativa Mayor (DAM)",
+    "section": "",
+    "text": "5.1 MCDC",
+    "crumbs": [
+      "II. Estimaciones y proyecciones a nivel subnacional",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>División Administrativa Mayor (DAM)</span>"
+    ]
+  },
+  {
+    "objectID": "5_dam.html#section",
+    "href": "5_dam.html#section",
+    "title": "5  División Administrativa Mayor (DAM)",
+    "section": "5.2 ",
+    "text": "5.2",
+    "crumbs": [
+      "II. Estimaciones y proyecciones a nivel subnacional",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>División Administrativa Mayor (DAM)</span>"
+    ]
+  },
+  {
+    "objectID": "6_dame.html",
+    "href": "6_dame.html",
+    "title": "6  División Administrativa Menor (DAME)",
+    "section": "",
+    "text": "6.1 Métodos de variables sintomáticas",
+    "crumbs": [
+      "II. Estimaciones y proyecciones a nivel subnacional",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>División Administrativa Menor (DAME)</span>"
+    ]
+  },
+  {
+    "objectID": "6_dame.html#métodos-matemáticos",
+    "href": "6_dame.html#métodos-matemáticos",
+    "title": "6  División Administrativa Menor (DAME)",
+    "section": "6.2 Métodos matemáticos",
+    "text": "6.2 Métodos matemáticos",
+    "crumbs": [
+      "II. Estimaciones y proyecciones a nivel subnacional",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>División Administrativa Menor (DAME)</span>"
+    ]
+  },
+  {
+    "objectID": "7_ejem_sub.html",
+    "href": "7_ejem_sub.html",
+    "title": "7  Ejemplo de Aplicación en Excel y R",
+    "section": "",
+    "text": "7.1 DAM",
+    "crumbs": [
+      "II. Estimaciones y proyecciones a nivel subnacional",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ejemplo de Aplicación en Excel y R</span>"
+    ]
+  },
+  {
+    "objectID": "7_ejem_sub.html#dame",
+    "href": "7_ejem_sub.html#dame",
+    "title": "7  Ejemplo de Aplicación en Excel y R",
+    "section": "7.2 DAME",
+    "text": "7.2 DAME",
+    "crumbs": [
+      "II. Estimaciones y proyecciones a nivel subnacional",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ejemplo de Aplicación en Excel y R</span>"
+    ]
+  },
+  {
+    "objectID": "7_ejem_sub.html#distribución-por-edades",
+    "href": "7_ejem_sub.html#distribución-por-edades",
+    "title": "7  Ejemplo de Aplicación en Excel y R",
+    "section": "7.3 Distribución por edades",
+    "text": "7.3 Distribución por edades",
+    "crumbs": [
+      "II. Estimaciones y proyecciones a nivel subnacional",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ejemplo de Aplicación en Excel y R</span>"
     ]
   },
   {
@@ -106,14 +260,56 @@
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "App. A: Summary",
+    "objectID": "a1_redondeo.html",
+    "href": "a1_redondeo.html",
+    "title": "Apéndice A — Algoritmo de redondeo",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
       "Apéndices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Algoritmo de redondeo</span>"
+    ]
+  },
+  {
+    "objectID": "a2_tab_cua.html",
+    "href": "a2_tab_cua.html",
+    "title": "Apéndice B — Tabla cuadrada",
+    "section": "",
+    "text": "B.1 Algoritmo",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Tabla cuadrada</span>"
+    ]
+  },
+  {
+    "objectID": "a2_tab_cua.html#section",
+    "href": "a2_tab_cua.html#section",
+    "title": "Apéndice B — Tabla cuadrada",
+    "section": "B.2 ",
+    "text": "B.2",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Tabla cuadrada</span>"
+    ]
+  },
+  {
+    "objectID": "I_nacional.html",
+    "href": "I_nacional.html",
+    "title": "I. Estimaciones y proyecciones a nivel nacional",
+    "section": "",
+    "text": "A nivel nacional se …",
+    "crumbs": [
+      "I. Estimaciones y proyecciones a nivel nacional"
+    ]
+  },
+  {
+    "objectID": "II_subnacional.html",
+    "href": "II_subnacional.html",
+    "title": "II. Estimaciones y proyecciones a nivel subnacional",
+    "section": "",
+    "text": "A nivel subnacional se …",
+    "crumbs": [
+      "II. Estimaciones y proyecciones a nivel subnacional"
     ]
   }
 ]
