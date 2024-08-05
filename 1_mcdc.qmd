@@ -1,0 +1,31 @@
+---
+bibliography: references.bib
+---
+
+# El Método de Componentes Demográficos por Cohortes (MCDC)
+
+Uno de los métodos más ampliamente utilizado para realizar estimaciones y proyecciones de la población, por sexo y edad,  es el Método de Componentes demográfico por Cohortes. Este enfoque se empleaba típicamente para grupos de edad de cinco años y períodos de proyección de cinco años (5x5). No obstante, también es posible aplicar el MCDC  por edad individual y año calendario (1x1). Las estimaciones y  proyecciones de población 1x1 permite hacer un seguimiento preciso de la evolución de las cohortes en cada año, lo cual proporciona un comportamiento de cohorte más consistente en comparación con las cifras obtenidas 5x5.
+
+## Subtitle
+
+El modelo estima y proyecta la población por sexo y edad, incorporando la evolución de los tres componentes determinantes de la dinámica poblacional: mortalidad, fecundidad y migración. Para ello, se utiliza la ecuación compensadora correspondiente a cada sexo y edad [@knuth84].
+
+$$
+N^{t+1}=N^t+B^{t, t+1}-D^{t, t+1}+I^{t+1}-E^{t+1} 
+$$
+
+donde:
+
+$N^{t+1}$ = la población inicial estimada al 1 de enero;
+
+$N^t$ = la población estimada por el modelo al 1 de enero en $t+1$;
+
+$B^{t, t+1}$ = los nacimientos de mujeres en edad fértil, ocurridos en el año;
+
+$D^{t, t+1}$ = las defunciones ocurridas a lo largo del período $t, t+1$;
+
+$I^{t+1}$ y $E^{t+1}$ = el total de inmigrantes y de emigrantes, respectivamente, al final del período $t+1$.
+
+Para la aplicación del método, se requieren los siguientes insumos: la población inicial desglosada por sexo y edad, la tasa de supervivencia desglosada por sexo y edad, las tasas específicas de fecundidad por edad y el saldo migratorio internacional desglosado por sexo y edad. Es importante destacar que todos estos insumos deben corresponder a un año calendario.
+
+Para la determinación de dichos insumos, es necesario establecer las tendencias históricas de los tres componentes demográficos mediante procedimientos de estimación.

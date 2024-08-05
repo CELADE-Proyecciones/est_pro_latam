@@ -8,6 +8,6 @@ To learn more about Quarto books visit <https://quarto.org/docs/books>.
 1 + 1
 ```
 
-## Acknowledgements {.unnumbered}
+## Agradecimientos {.unnumbered}
 
 EPL is hosted by <https://www.netlify.com> as part of their support of open source software and communities.

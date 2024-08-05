@@ -1,0 +1,12 @@
+# Ejemplo de Aplicación en Excel y R
+
+En esta sección se implementa la propuesta metodológica previamente descrita con el fin de obtener estimaciones y proyecciones de los tres componentes demográficos utilizando datos de Perú. Se adjuntan los scripts R y los datos necesarios para reproducir esta sección junto con el presente documento. Cuando
+sea factible, también se proporcionarán los métodos en formato Excel. La estructura de los documentos disponibles para esta sección se encuentra detallada en el Anexo A2.
+
+## Fecundidad
+
+## Mortalidad
+
+##  Migración
+
+## Proyección poblacional

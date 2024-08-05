@@ -1,0 +1,51 @@
+# Procedimientos metodológicos para las estimaciones y proyecciones
+
+## Fecundidad
+
+Las estimaciones y proyecciones de fecundidad para cada año se dividen en cuatro pasos:
+
+i)  estimación del nivel general de fecundidad, usualmente medido por la tasa global de fecundidad (TGF), con base en las fuentes de datos disponibles;
+
+ii) desglose de las tasas específicas de fecundidad correspondientes a las TGF estimadas previamente, en edades simples (si se encuentran en grupos de cinco años);
+
+iii) estimación de la estructura relativa de la fecundidad para el período de estimación y
+
+iv) obtención de las tasas específicas de fecundidad (TEF) estimadas.
+
+Es decir, se estima por separado el nivel y la estructura de la fecundidad, para luego combinarlos y obtener las TEF. Esta separación permite, por ejemplo, que los niveles generales de fecundidad cambien a un ritmo diferente al de la estructura de la fecundidad.
+
+### Nivel de la fecundidad
+
+### Estructura de la Fecundidad
+
+## Mortalidad
+
+Las estimaciones de la mortalidad se dividen en tres pasos:
+
+1.  la construcción de las tablas de mortalidad completas años pivotes,
+2.  la construcción de tablas de mortalidad anualizadas y
+3.  el cálculo de las relaciones de supervivencia por edad para cada año calendario. Todos los procedimientos deben llevarse a cabo por separado para cada sexo.
+
+### Tablas de mortalidad completas pivotes
+
+### Tablas de mortalidad por año calendario
+
+### Proyección
+
+### Procedimiento para los años de la COVID-19
+
+## Migración internacional
+
+A diferencia de la mortalidad y la fecundidad, la migración se ve fuertemente influenciada por los cambios circunstanciales tanto internos como externos al país. Este comportamiento hace que la migración sea especialmente susceptible a variaciones imprevisibles sin una tendencia clara. Además, cabe destacar que la migración es el componente de la población que cuenta con una calidad y disponibilidad de datos más limitada. A pesar de esta dificultad, es posible utilizar ciertos enfoques para considerar la migración en las proyecciones de población.
+
+La migración se llevará a cabo en dos etapas: proyección del nivel y proyección de la estructura. Para evaluar el nivel de migración, se utilizarán los saldos migratorios al final del período, desglosados por sexo. Por otro lado, para evaluar la estructura de la migración, se utilizarán los saldos distribuidos por sexo y edad.
+
+### Nivel de la migración internacional
+
+Los saldos migratorios por sexo pueden ser estimados de manera directa mediante la diferencia entre el número de inmigrantes y el número de emigrantes, o a través de métodos indirectos. Uno de los métodos indirectos más destacados es el método residual, el cual estima la migración neta al calcular la diferencia entre la población esperada en ausencia de migración y la población observada. 
+
+### Estructura de la migración
+
+#### Estimaciones
+
+#### Proyecciones

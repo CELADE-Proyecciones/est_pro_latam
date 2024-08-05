@@ -1,42 +1,69 @@
 project:
   type: book
+  
+lang: es
 
 book:
-  title: "Estimaciones y proyecciones de población en América Latina"
+  title: "Manual de Estimaciones y Proyecciones de Población en América Latina"
   reader-mode: true
-  author: "Guiomar Bay"
-  date: "4/8/2024"
-  
+  author: 
+    - name: Área de Demografía e Información sobre Población
+      # url: http://norahjones.com
+    - name: CELADE - División de Población de la CEPAL
+      url: https://www.cepal.org/es/acerca-de-poblacion-y-desarrollo
+  date: "2024/10/28"
+  page-navigation: true
   page-footer:
     left: |
-      R for Data Science (2e) was written by Hadley Wickham, Mine
-      Çetinkaya-Rundel, and Garrett Grolemund.
+      La presente publicación fue preparada por 
+      Guiomar Bay, Helena Cruz Castanheira, [...].
     right: |
-      This book was built with <a href="https://quarto.org/">Quarto</a>.
-  cover-image: cover.jpg
-  favicon: cover.jpg
-  site-url: https://r4ds.hadley.nz/
-  repo-url: https://github.com/hadley/r4ds/
+      Este manual fue hecho en <a href="https://quarto.org/">Quarto</a>.
+  cover-image: cover.png
+  favicon: cover.png
+  site-url: https://www.cepal.org/es/acerca-de-poblacion-y-desarrollo
+  repo-url: https://github.com/CELADE-Proyecciones/est_pro_latam
   repo-branch: main
   repo-actions: [edit, issue]
+  
   
 
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
+    
+    - part: I_nacional.qmd
+      chapters:
+        - 1_mcdc.qmd
+        - 2_datos_concil.qmd
+        - 3_procedimientos.qmd
+        - 4_ejem_nac.qmd
+      
+    
+    - part: II_subnacional.qmd
+      chapters:
+        - 5_dam.qmd
+        - 6_dame.qmd
+        - 7_ejem_sub.qmd
+        
+        
     - references.qmd
 
+  appendices:
+    - a1_redondeo.qmd
+    - a2_tab_cua.qmd
 
 
-
+# crossref:
+#   appendix-title: "App."
+#   appendix-delim: ":"
 
 bibliography: references.bib
 
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
+  # pdf:
+  #   documentclass: scrreprt
 
 editor: visual
