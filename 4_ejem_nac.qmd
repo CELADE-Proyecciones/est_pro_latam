@@ -1,12 +1,21 @@
 # Ejemplo de Aplicación en Excel y R
 
-En esta sección se implementa la propuesta metodológica previamente descrita con el fin de obtener estimaciones y proyecciones de los tres componentes demográficos utilizando datos de Perú. Se adjuntan los scripts R y los datos necesarios para reproducir esta sección junto con el presente documento. Cuando
-sea factible, también se proporcionarán los métodos en formato Excel. La estructura de los documentos disponibles para esta sección se encuentra detallada en el Anexo A2.
+En esta sección se implementa la propuesta metodológica previamente descrita con el fin de obtener estimaciones y proyecciones de los tres componentes demográficos utilizando datos de Perú. Se adjuntan los scripts R y los datos necesarios para reproducir esta sección junto con el presente documento. Cuando sea factible, también se proporcionarán los métodos en formato Excel. La estructura de los documentos disponibles para esta sección se encuentra detallada en el Anexo A2.
 
 ## Fecundidad
 
+### Datos
+
+En las estimaciones y proyecciones de los niveles y la estructura de la fecundidad se han considerado varias fuentes de datos disponibles en *World Fertility Data* (United Nations, 2019)*.* La base de datos abarca información proveniente de sistemas de registro civil, censos de población y encuestas, y se puede descargar directamente utilizando el script `Fecundidad.R`.
+
+### El nivel de la fecundidad
+
+Para determinar el nivel de fecundidad, se ajustó una curva logística. La aplicación de este método en R requiere una entrada de datos "cuadrada" que debe incluir la tasa global de fecundidad y el año de referencia, como se muestra a continuación:
+
+
+
 ## Mortalidad
 
-##  Migración
+## Migración
 
 ## Proyección poblacional

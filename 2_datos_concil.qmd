@@ -1,37 +1,31 @@
 # Datos, estimaciones, conciliación y proyección
 
-El tamaño y la composición por sexo y edad de la población base son factores determinantes para las proyecciones de la dinámica poblacional mediante el método de los componentes. Esta población debe ser el resultado de la conciliación de las distribuciones de la población por edad y sexo en los puntos donde se disponga de mayor cantidad de datos (normalmente, los años de los censos demográficos), así como de las estimaciones de mortalidad, fecundidad y migración neta para cada uno de los períodos entre censos.
+El tamaño y la composición —por sexo y edad— de la población base son factores determinantes de las proyecciones de la dinámica poblacional por el método de los componentes.  Esta población base debe ser el resultado de la conciliación de las distribuciones de la población por edad y sexo en los puntos donde se dispone de mayor cantidad de información de mortalidad, fecundidad y migración neta , normalmente los años alrededor de los censos y encuestas demográficas.
 
-Por lo tanto, este proceso requiere una evaluación cuidadosa de todas las estimaciones provenientes de las fuentes de datos disponibles y la elección de estimaciones que representen de manera coherente la evolución demográfica histórica de dicha población.
+Por lo tanto, este proceso requiere una evaluación cuidadosa de todas las estimaciones provenientes de las fuentes de datos disponibles y la elección de las estimaciones más plausibles que representen de manera coherente la evolución demográfica histórica de la población.
 
 ## Datos
 
-Antes de iniciar las estimaciones y proyecciones de población, es necesario definir los datos que se utilizarán para determinar la evolución demográfica histórica y, eventualmente, corregir las poblaciones pivotes. Este proceso requiere recopilar fuentes de datos con una atención continua a la cobertura, periodicidad, desagregación y calidad de los datos. Los períodos atípicos, incluyendo las crisis de mortalidad, deben ser cuidadosamente registrados al recopilar datos, ya que representan interrupciones en las tendencias históricas. Estos períodos de ruptura suelen ser temporales y requieren un tratamiento específico o justificaciones adicionales si se van a utilizar en las estimaciones y proyecciones de población.
+Antes de arrancar con las estimaciones y proyecciones de población, es necesario definir los datos que se utilizarán para determinar la evolución demográfica histórica y, eventualmente, corregir las poblaciones pivotes.  Este proceso requiere recopilar fuentes de datos poniendo especial atención a la cobertura, periodicidad, desagregación y calidad de la información.
 
-Aunque es común que los datos provenientes de diversas fuentes diverjan entre sí, las series de datos que se utilizarán para cada componente deben demostrar cierta coherencia, indicando una tendencia y un nivel adecuado del cual se pueda extraer una estimación sintética. En este caso, al igual que con los valores atípicos, la inclusión de series que tienen muchos valores atípicos debe evaluarse con mayor precaución.
+Los períodos atípicos —incluyendo las crisis de mortalidad— deben ser cuidadosamente registrados, ya que representan interrupciones en las tendencias históricas.  Estos períodos de ruptura suelen ser temporales y requieren un tratamiento específico o justificaciones adicionales si se van a utilizar en las estimaciones y proyecciones de población.
 
-Es importante prestar especial atención a los datos de los sistemas de estadísticas vitales. Estos datos tienen un carácter universal, continuo y primario, y se utilizan ampliamente para corregir los grupos de edad específicos en el Censo, los cuales se sabe que están subestimados. También se utilizan para definir los numeradores de las tasas de mortalidad y los niveles y estructuras de la fecundidad. Sin embargo, esta fuente de datos se ve constantemente afectada por problemas de cobertura y registro tardío, entre otros.
+Aunque es común que los datos provenientes de diversas fuentes diverjan entre sí, las series de datos que se utilizarán para cada componente deben guardar cierta coherencia, mostrar una tendencia y niveles adecuados de los cuales se pueda extraer una estimación sintética.  La inclusión de series que tienen muchos valores atípicos debe evaluarse con mayor precaución.
 
+Es importante prestar especial atención a los datos del sistema de registro civil y estadísticas vitales que son continuos en el tiempo, pueden ser desglosados a menores niveles territoriales, de bajo costo (si la capacidad institucional ya está instalada en el país) y pueden estar relacionados a acceso a derechos por parte de la población. Esos datos se utilizan para definir los numeradores de las tasas de mortalidad y fecundidad, así como sus niveles y estructuras. Sin embargo, esta fuente de datos se ve constantemente afectada por problemas de cobertura y registro tardío, entre otros problemas de calidad y muchas veces es necesario hacer una evaluación de la calidad del dato antes de utilizarlo, principalmente de su completitud.
 
 ## Estimaciones y proyecciones
 
-Utilizando las series de datos correspondientes a cada componente, se calculan estimaciones para el período anterior al inicio de las proyecciones. La definición del período inicial de proyección determinará el uso de las tendencias históricas observadas y a partir de cuándo se proyectarán los componentes basados en suposiciones sobre su comportamiento futuro.
+Utilizando las series de datos correspondientes a cada componente, se calculan las estimaciones para todo el período anterior al año base de las proyecciones. La definición del período base de proyección determina a partir de cuándo se proyectarán los componentes.
 
-Las estimaciones deben considerar los datos adecuados del paso anterior para representar la evolución demográfica histórica de cada componente de la población.
+Las estimaciones deben considerar los datos evaluados y ajustados para representar de manera adecuada la evolución demográfica histórica de cada componente de la población.
 
-Las proyecciones se basarán en la tendencia histórica y en suposiciones sobre la evolución de los tres componentes demográficos hasta el final del período de proyección. Es importante evaluar cuidadosamente las premisas límite, ya que su influencia en las proyecciones aumenta a medida que nos alejamos del último año estimado.
+Las proyecciones se basarán en la extrapolación de las tendencias históricas observadas y/o en suposiciones sobre la evolución de los tres componentes demográficos hasta el final del período de proyección. Es importante evaluar cuidadosamente las premisas límite planteadas y en qué año en el futuro se las sitúa , ya que su influencia en las proyecciones aumenta a medida que nos alejamos del último período estimado. 
 
 
 ## Conciliación Demográfica
 
-Las estimaciones de la dinámica demográfica y las cifras observadas en los censos deben ser coherentes entre sí para generar una dinámica de cohorte consistente, abarcando a toda la población a lo largo del período de proyección. Para lograr esto, es necesario llevar a cabo una conciliación demográfica que resulte en una población base que se utilizará en el método de los componentes.
+Las estimaciones de los componentes demográficos y las cifras observadas en los censos deben ser coherentes entre sí para generar una dinámica de cohorte consistente, abarcando a toda la población a lo largo del período de proyección. Para lograr esto, es necesario llevar a cabo una conciliación demográfica que resulte en una población base.
 
-Los procedimientos de conciliación tienen como objetivo garantizar la consistencia entre la dinámica demográfica de los períodos intercensales y las estimaciones de los tres componentes demográficos. La conciliación implica:
+Los procedimientos de conciliación tienen como objetivo garantizar la consistencia entre la dinámica demográfica de los períodos intercensales y las estimaciones de los tres componentes demográficos. La conciliación implica: i) evaluar la cobertura de cada censo, ii) corregir las distribuciones por sexo y edad de los censos, y iii) asegurar la compatibilidad entre la dinámica demográfica intercensal y las estimaciones de fecundidad, mortalidad y migración. La diferencia entre la población estimada y la prevista por edad puede utilizarse en un proceso iterativo para calibrar los efectos de cohorte. 
 
--   evaluar la cobertura de cada censo,
-
--   corregir las distribuciones por sexo y edad de los censos, y
-
--   asegurar la compatibilidad entre la dinámica demográfica intercensal y las estimaciones de fecundidad, mortalidad y migración.
-
-La diferencia entre la población estimada y la prevista también debe utilizarse en la conciliación demográfica, lo cual puede servir como proceso para calibrar las estimaciones o la población base.

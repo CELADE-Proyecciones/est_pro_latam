@@ -2,50 +2,258 @@
 
 ## Fecundidad
 
-Las estimaciones y proyecciones de fecundidad para cada año se dividen en cuatro pasos:
+Las estimaciones y proyecciones de fecundidad para cada año se dividen en cuatro pasos: i) estimación del nivel general de fecundidad, usualmente medido por la tasa global de fecundidad (TGF), con base en las fuentes de datos disponibles; ii) desglose de las tasas específicas de fecundidad, correspondientes a las TGF estimadas previamente, en edades simples si estas se encontraran en grupos de cinco años; iii) estimación de la estructura relativa de la fecundidad para el período de estimación; iv) obtención de las tasas específicas de fecundidad (TEF) estimadas v) proyecciones del nivel y estructura de la fecundidad.
 
-i)  estimación del nivel general de fecundidad, usualmente medido por la tasa global de fecundidad (TGF), con base en las fuentes de datos disponibles;
-
-ii) desglose de las tasas específicas de fecundidad correspondientes a las TGF estimadas previamente, en edades simples (si se encuentran en grupos de cinco años);
-
-iii) estimación de la estructura relativa de la fecundidad para el período de estimación y
-
-iv) obtención de las tasas específicas de fecundidad (TEF) estimadas.
-
-Es decir, se estima por separado el nivel y la estructura de la fecundidad, para luego combinarlos y obtener las TEF. Esta separación permite, por ejemplo, que los niveles generales de fecundidad cambien a un ritmo diferente al de la estructura de la fecundidad.
+Es decir, se estima por separado el nivel y la estructura de la fecundidad, para luego combinarlos y obtener las TEF.  Esta separación permite, por ejemplo, que los niveles generales de fecundidad cambien a un ritmo diferente al de su estructura.
 
 ### Nivel de la fecundidad
 
+La estimación y proyección de la TGF se basa en la teoría de la transición demográfica, la cual establece que la TGF de un país experimenta un rápido descenso en los niveles de fecundidad hasta alcanzar un límite inferior en el cual se estabiliza. Este patrón puede describirse mediante una función logística, representada por la siguiente ecuación:
+
+$$
+TGF(t) = I + \frac{S - I}{1 + e^{(a + b \cdot t)}}
+$$ donde:
+
+$TGF(t)$ = Tasa Global de Fecundidad en el momento $t$;
+
+$I$ = Asíntota inferior en la que la fecundidad tenderá a estabilizarse;
+
+$S$ = Asíntota superior que hace referencia al valor máximo de la TGF antes del inicio de la tendencia descendente en la fecundidad;
+
+$a, b$ = Parámetros a estimar;
+
+$t$ = Tiempo.
+
+El ajuste de la curva logística puede llevarse a cabo con al menos dos puntos observados o un número mayor. De la misma manera, es posible realizar múltiples ajustes de curvas logísticas por tramos en la serie para obtener el resultado deseado.
+
+#### Estimaciones
+
+Aunque la estimación y la proyección del nivel de fecundidad formen parte de un mismo proceso, es importante destacar que existe una distinción teórica entre ambos. Una vez que se han definido un conjunto de pivotes a partir de las TGF observadas, se espera que la curva logística propuesta se ajuste a dichos pivotes y proporcione una serie estimada de TGFs para el período en cuestión. En otras palabras, los datos históricos son fundamentales en el ajuste de la curva logística inicial en la fase de estimación.
+
+#### Proyecciones
+
+Teniendo en cuenta la serie histórica estimada y planteando una hipótesis sobre la fecundidad mínima que alcanzará esta población al final de su transición de fecundidad, se genera la serie proyectada.
+
+#### Fecundidad por edades simples
+
+En general, en las publicaciones más antiguas es frecuente encontrar las tasas específicas de fecundidad, o la información necesaria para calcular dichas tasas, agregadas en grupos quinquenales de edad para las mujeres de 15 a 49 años. Con el fin de obtener estimaciones y proyecciones desagregadas por edades simples puede ser necesario aplicar métodos de desagregación de las TEF para los años pivote. También, en algunas ocasiones, las tasas calculadas por edades simples pueden presentar irregularidades debido a problemas de calidad en la información. Una manera de suavizar estas tasas consiste en agruparlas y luego abrirlas por edad simple.
+
+Para el cometido anterior es recomendable la utilización y comparación de al menos tres métodos de interpolación: Spline Calibrado (CS), Beers y Sprague.
+
+El método de @sprague80 usa la quinta diferencia, en tanto que los puntos interpolados forman parte de una curva suave estimada y la suma de los grupos de edad desagregados es igual a de los agregados. También, utilizando la minimización por quinta diferencia, @beers1945 propone un método de interpolación que relaja el requisito de que el valor del grupo de entrada se reproduzca en la suma desagregada, lo que produce curvas más suaves.
+
+En una comparación de métodos para desagregar los datos de fecundidad por edad, @liu2011 demuestran que Sprague y Beers presentan el mejor ajuste entre los métodos analizados. Sin embargo, ambos métodos permiten obtener tasas negativas para las edades inferiores a los 20 años y superiores a los 40, lo cual requiere ajustes adicionales propuestos por los autores. En este sentido, @schmertmann2014 propone un método específico para desglosar las estructuras de la fecundidad. El método CS encuentra una curva suave que minimiza la penalización del error al cuadrado. Dicho método utiliza tanto datos observados como datos a priori, específicamente las estructuras de fecundidad observadas en la Base de Datos de Fecundidad Humana (HFD por sus siglas en inglés) y la Base de Datos Internacional del Buró de Censos de los Estados Unidos (IDB por sus siglas en inglés). Además, la metodología propuesta prescinde del uso de grupos de edad de cinco años.
+
 ### Estructura de la Fecundidad
+
+Una vez obtenida las TEF en edades simples, se procede a la estimación y proyección de las estructuras de fecundidad. La estructura se representa mediante la distribución relativa de las tasas específicas de fecundidad, lo cual muestra la contribución de cada edad a la TGF.
+
+#### Estimaciones
+
+Las estimaciones anuales de la estructura pueden obtenerse mediante interpolación lineal de las estructuras observadas para el periodo.
+
+#### Proyecciones
+
+Para la proyección, se toma la última estructura estimada y se interpola hacia un modelo de estructura de fecundidad tardía. El CELADE ha optado ciertos modelos de fecundidad tardía propuestos por @un2010. En el Anexo 1 se presentan dichos modelos, así como su desglose por edades simples.
+
+Con el fin de asegurar que los cambios en las estructuras de fecundidad sean graduales, se asume que la población en cuestión alcanzará el modelo de fecundidad tardía en un futuro distante. El momento en que esto ocurra dependerá de la última estructura estimada.
+
+Un enfoque alternativo ha sido desarrollado por @sevickova2016, en el cual la estructura de la fecundidad converge hacia un patrón global de fecundidad tardía, aunque no necesariamente lo alcanza. La estructura a futuro es el resultado de una media ponderada de dos proyecciones preliminares: i) la proyección que supone que la estructura converge hacia la estructura global de fecundidad tardía $(p_t^I)$; y ii) la proyección que supone que la tendencia observada en la estructura de fecundidad del país continúa indefinidamente $(p_t^{II})$. La evolución de la estructura también depende del momento en que la tasa global de fecundidad alcance la fase III de la transición de la fecundidad.
+
+El modelo se define como:
+
+$$
+\text{logit}(p_t) = \tau_t \cdot \text{logit}(p_t^I) + (1 - \tau_t) \cdot \text{logit}(p_t^{II})
+$$
+
+$$
+\tau_t = \frac{(t - t_r)}{(t_g - t_r)}
+$$
+
+Donde $t$ es el año proyectado, $t_r$ es el año de la última estructura observada y $t_g$ es el año en que el país alcanza la norma. El procedimiento detallado para estimar $t_g$ se puede encontrar en @sevickova2016. Este modelo proyecta una transición de la estructura más suave y una buena predicción del número medio de hijos que tendrá una mujer a lo largo de su vida reproductiva [@bohk-ewald2018]. El método está implementado por la función `project.pasfr()` del paquete `bayesPop` [@sevickovaHana2016].
+
+### Tasas Específicas de Fecundidad
+
+Finalmente, se aplican las distribuciones relativas obtenidas previamente a las TGF proyectadas y se obtienen las tasas específicas de fecundidad estimadas y proyectadas.
 
 ## Mortalidad
 
-Las estimaciones de la mortalidad se dividen en tres pasos:
+### Estimaciones
 
-1.  la construcción de las tablas de mortalidad completas años pivotes,
-2.  la construcción de tablas de mortalidad anualizadas y
-3.  el cálculo de las relaciones de supervivencia por edad para cada año calendario. Todos los procedimientos deben llevarse a cabo por separado para cada sexo.
+Las estimaciones de la mortalidad se dividen en tres etapas: 1) la construcción de las tablas de mortalidad completas para los años pivotes, 2) la interpolación de las tablas de mortalidad a años calendario; y 3) el cálculo de las relaciones de supervivencia por edad para cada año calendario.  Todos los procedimientos deben llevarse a cabo por separado para cada sexo.
 
-### Tablas de mortalidad completas pivotes
+#### Tablas de mortalidad por edad simple pivotes
 
-### Tablas de mortalidad por año calendario
+El primer paso para generar las tablas de mortalidad completas consiste en el cálculo de las tasas de mortalidad por edades y sexo para los años censales. Si el país cuenta con datos de mortalidad confiables, las tasas específicas de mortalidad anuales se calcularán de la siguiente manera:
 
-### Proyección
+$$_{n}m_x^Z = \frac{_{n}D_x^Z}{_{n}N_x^{(30 - VI - Z)}}$$
+
+El numerador $_{n}D_x^Z$ es el número de muertes ocurridas en el año $Z$ entre las edades exactas $x$ y $x+n$, mientras que el denominador $_{n}N_x^{(30 - VI - Z)}$ es la población entre las mismas edades exactas en la mitad del año censal. Este último es un indicador del tiempo de exposición de la población al riesgo de muerte.
+
+Todos los ajustes que afecten directamente a las tasas de mortalidad deben realizarse en esta etapa. Estos ajustes incluyen la aplicación de métodos de completitud de defunciones (DDM por sus siglas en inglés), suavización de las tasas de mortalidad, ajustes de población, entre otros. Una vez completados todos los ajustes, se utiliza la $_{n}m_x$ para generar la tabla de mortalidad.
+
+En caso de que se construya inicialmente una tabla de mortalidad abreviada, por grupos quinquenales de edad, se requieren métodos adicionales para abrirla a edades simples. Entonces la desagregación de la tabla de mortalidad abreviada y la extrapolación del grupo abierto pueden llevarse a cabo mediante dos conjuntos de métodos: 1) métodos no paramétricos y 2) métodos paramétricos. La clasificación de estos métodos como paramétricos o no paramétricos se refiere a la presencia o ausencia de una ley de mortalidad subyacente en el método utilizado.
+
+Este manual considera la comparación entre un método paramétrico y un no paramétrico. El método paramétrico tomado en consideración es el de Heligman-Pollard, que permite ajustar una ley de mortalidad para todas las edades a través de cierto número de parámetros. El método no paramétrico utilizado es el *Penalized Composite Link Model* (PCLM), que ha demostrado un mejor desempeño en el desglose y una mayor flexibilidad para tratar la extrapolación de grupos abiertos en comparación con otros métodos no paramétricos [@rizzi2015].
+
+##### Comparación de los métodos
+
+El *Penalized Composite Link Model*, propuesto por @rizzi2015, es un método no paramétrico para el desglose de datos. Su único supuesto es que la distribución subyacente es suave. En otras palabras, los datos agregados observados son una indicación indirecta de la distribución subyacente, la cual puede estimarse a través de los propios datos sin necesidad de recurrir a una forma predefinida. Este método se basa en el modelo de *Composite Link*, al cual se le añade un término de penalización para asegurar la suavidad de la distribución estimada. La estimación de la distribución latente se realiza mediante la maximización de la verosimilitud penalizada, utilizando el criterio de minimización de Akaike (AIC).
+
+Además, el método puede tratar de manera flexible el intervalo abierto y permite añadir información adicional sobre cómo estimar dicho intervalo. En este caso, se emplearon dos enfoques: Makeham y Kannisto. Ambos procedimientos pueden comprenderse a partir del modelo logístico definido por la siguiente función:
+
+$$m_x = c + \frac{ae^{bx}}{1 + \alpha e^{bx}}$$
+
+El enfoque de Kannisto predice que la mortalidad en edades avanzadas se acerca más a una función lineal con respecto a la edad, mientras que Makeham ajusta una función logística cuando alfa es igual a cero, lo que implica un crecimiento mayor en edades más avanzadas en comparación con Kannisto.
+
+Por otro lado, Heligman y Pollard (1980) es un método paramétrico en el que se predefine una expresión matemática para la graduación de los patrones de mortalidad por edad. La desagregación de la tabla de vida con este método se realiza para ajustando las tasas de mortalidad $(_{n}m_x)$ de los grupos quinquenales a este patrón de graduación predefinido:
+
+$$
+\frac{q_x}{p_x} = A^{(x+b)^c} + De^{-E(\ln x - \ln F)^2} + GH^x
+$$ Esta forma funcional está compuesta por tres términos que describen los principales comportamientos de la mortalidad a lo largo de las distintas edades. En primer lugar, se observa un marcado descenso en la mortalidad infantil. Luego, se evidencia un aumento en la mortalidad debido a causas externas y en la mortalidad materna en edades más tempranas. Por último, se aprecia un patrón logístico en las edades más avanzadas.
+
+#### Tablas de mortalidad por edad simple y año calendario
+
+Una vez que se hayan obtenido las tablas de mortalidad para los años pivotes en edades simples, se procede a estimar las tablas de mortalidad para cada año. En el caso de países con restricciones en la disponibilidad de series históricas y períodos regulares, una alternativa es aplicar una modificación del método Lee-Carter desarrollado por @li2004, conocido como *Limited Lee-Carter*. El modelo adaptado sigue la misma ecuación básica que el modelo original.
+
+$$ \log[m_{x,t}] = a_x + b_x k_t + \epsilon_{x,t} $$
+
+Donde $a_x$ describe el patrón medio de mortalidad por edad, $b_x$ el perfil medio de variación por edad cuando varía el nivel $k_t$ de mortalidad y $\epsilon_{x,t}$ es un término de error con media 0 y varianza $\sigma_\epsilon^2$, que refleja la parte no captada por el modelo.
+
+El modelo establece la suposición de que $k_t$ sigue necesariamente un *random walk with drift*, y es necesario que la mortalidad disminuya de forma estable durante el periodo histórico utilizado. Este supuesto implica que el mejor predictor de la tasa de mortalidad de los períodos siguientes es la mortalidad actual más un término de desvío, dado por el cambio lineal en el nivel de mortalidad entre los períodos $t$ y $t-1$. De este modo, un conjunto de al menos 3 puntos de observación puede proporcionar todos los parámetros del modelo.
+
+El método es útil para estimar las tablas de mortalidad de cada año a partir de las tablas pivotes. Sin embargo, es importante tener en cuenta que la inclusión de períodos con alteraciones significativas en los procesos de generación de la serie $m_x$ puede influir en los parámetros promedio. Además, ciertas perturbaciones históricas donde se ha observado un aumento en la mortalidad, como el período de Covid-19, hacen que se viole el supuesto de que $k_t$ sigue un *random walk with drift*. En este sentido, puede resultar necesario utilizar intervalos fragmentados para obtener una serie de mortalidad que se ajuste mejor a los supuestos del modelo.
+
+Las estimaciones se llevan a cabo mediante la interpolación de los años pivotes, mientras que la proyección se puede realizar aplicando el método a una tabla límite de mortalidad que tenga una esperanza de vida al nacer superior a la última estimación.
+
+#### Matriz de Relación de supervivencia
+
+La matriz de supervivencia —correspondiente a cada año calendario y edades simples— se empleará como elemento de entrada del componente de mortalidad en la proyección de la población mediante el MCDC. Para los menores de un año, encontramos:
+
+$$b = \frac{L(0)}{l(0)}$$ De uno a noventa y nueve años la relación de supervivencia de la población entre las edades exactas $x$ y $x-1$ se expresa como:
+
+$$
+_1S_x = \frac{L(x)}{L(x-1)}
+$$
+
+Para el penúltimo grupo de edad:
+
+$$
+_nS_x = \frac{T_{x+n}}{T_x}
+$$ Para el último grupo de edad (grupo abierto), no se calcula la razón de supervivencia.
+
+### Proyecciones
+
+La proyección de la mortalidad se divide en tres etapas. La primera consiste en la proyección del nivel de mortalidad por sexo (medido por la esperanza de vida al nacer $e_0$), la segunda es la proyección de la estructura de la mortalidad (medida por las probabilidades de muerte por sexo y edad) y el tercer paso es construir las tablas de mortalidad correspondientes, ajustando las expectativas de vida de las dos primeras etapas. Al final se obtienen las relaciones de supervivencia correspondientes al período de proyección.
+
+#### Proyección del nivel de la mortalidad
+
+La esperanza de vida al nacer se proyecta por separado para hombres y mujeres, utilizando una curva logística. Esta metodología supone que el aumento de la esperanza de vida disminuye gradualmente a medida que se reduce el nivel de mortalidad.
+
+$$
+e(0,t) = K_1 + \frac{K_2}{1 + e^{(a + bt)}}
+$$
+
+Donde: $e(0,t)$ = las esperanzas de vida al nacer en el momento $t$;
+
+$K_1$ = la asíntota inferior;
+
+$K_1 + K_2$ = la asíntota superior;
+
+$a, b$ = los parámetros; y
+
+$t$ = el tiempo.
+
+El sistema de ecuaciones se resuelve fácilmente con dos observaciones en el tiempo. Se recomienda utilizar como pivotes la esperanzas de vida estimadas a partir de los dos últimos censos.
+
+Las asíntotas, por su parte, son valores teóricos. Información de los límites inferior y superior propuestos para América Latina se pueden consultar @bay2012. No obstante, para el límite superior, se recomienda utilizar la esperanza de vida de las tablas límite que se verán en el siguiente paso.
+
+Es importante considerar el ritmo de incremento de las e0 por sexo, así como la evolución del diferencial por sexo. Dependiendo del aumento entre las $e_0$ calculadas para los 2 últimos censos, existe la posibilidad de no utilizar el penúltimo censo sino uno anterior, esto para desacelerar el aumento de la e0. Adicionalmente, si el diferencial por sexo proyectado es inconsistente, proyectamos las e0 de mujeres y el diferencial de e0 respecto a los hombres, para obtener la e0 de hombres a partir de las e0 de mujeres menos el diferencial.
+
+#### Proyección de la estructura de la mortalidad
+
+La estructura se proyecta mediante la interpolación lineal de la última estructura observada hacia una tabla límite de mortalidad que presenta una esperanza de vida al nacer superior a la proyectada para el último año. La interpolación se realiza utilizando la siguiente ecuación:
+
+$$f_1 = \frac{e0_{(p,t)} - e0_0}{e0_{lim} - e0_0}$$
+
+$$nqx_t = (1 - f_1) \cdot nqx_0 + f_1 \cdot nqx_{lim}$$
+
+Donde: $e0_0$ = la esperanza de vida al nacer de la última observación;
+
+$e0_{(p,t)}$ = la esperanza de vida al nacer proyectada en el paso uno para el tiempo t;
+
+$e0_{lim}$ = la esperanza de vida al nacer de la tabla límite;
+
+$nqx_0$ = la probabilidad de muerte entre x y x+n años de la última observación;
+
+$nqx_{lim}$ = la probabilidad de muerte entre x y x+n años de la tabla límite;
+
+$nqx_t$ = la probabilidad de muerte entre x y x+n años interpolada para el año t.
+
+Las probabilidades de muerte interpoladas se utilizarán con el fin de generar las tablas de mortalidad por edad simple. Para tal fin, también es necesario obtener —mediante interpolación— las esperanzas de vida a los 100 años, así como el tiempo medio vivido por aquellos que fallecieron en las edades de 1 a 4 años. Este procedimiento se lleva a cabo utilizando los mismos factores de interpolación previamente utilizados.
+
+#### Ajuste de las esperanzas de vida
+
+Las tablas de mortalidad obtenidas en la segunda etapa no necesariamente reflejan la misma esperanza de vida al nacer que se proyecta en la etapa 1, por lo tanto, es necesario realizar un ajuste para reducir esta diferencia hasta que se aproxime a cero. Este proceso de ajuste se realiza de manera iterativa, permitiendo repeticiones indefinidas. Sin embargo, resultados empíricos indican que alrededor de 30 iteraciones suelen generar una convergencia satisfactoria. El proceso iterativo se realiza de la siguiente manera:
+
+$$f_{\text{adj}} = \frac{e0_{2,t,i-1x}}{e0_{(p,t)}}$$
+
+$$nqx_{(t,i)} = nqx_{t,i-)} \cdot f_{\text{adj}}, \quad \text{para } x > 1$$
+
+Donde:
+
+$e0_{2,t,i-1}$ = la esperanza de vida al nacer calculada para el tiempo t resultante de la iteración i-1;
+
+$e0_{p,t}$ = la esperanza de vida al nacer proyectada en el paso uno para el tiempo t;
+
+$f_{\text{adj}}$ = el factor de ajuste;
+
+$nqx_{t,i-1}$ = la probabilidad de muerte entre x y x+n años calculada en la iteración i-1;
+
+$nqx_{t,i}$ = la probabilidad de muerte entre x y x+n años resultante de la iteración i.
+
+La corrección de las probabilidades de muerte no se aplica para la edad cero. En cada iteración, se genera una nueva tabla de vida y se ejecuta el procedimiento hasta que la discrepancia en la esperanza de vida calculada y original sea próxima a cero.
 
 ### Procedimiento para los años de la COVID-19
 
+Pendiente...
+
 ## Migración internacional
 
-A diferencia de la mortalidad y la fecundidad, la migración se ve fuertemente influenciada por los cambios circunstanciales tanto internos como externos al país. Este comportamiento hace que la migración sea especialmente susceptible a variaciones imprevisibles sin una tendencia clara. Además, cabe destacar que la migración es el componente de la población que cuenta con una calidad y disponibilidad de datos más limitada. A pesar de esta dificultad, es posible utilizar ciertos enfoques para considerar la migración en las proyecciones de población.
+A diferencia de la mortalidad y la fecundidad, la migración se ve fuertemente influenciada por los cambios coyunturales tanto internos como externos al país. Este comportamiento hace que la migración sea especialmente susceptible a variaciones imprevisibles que no necesariamente siguen una tendencia clara. Además, es importante destacar que la migración es el componente demográfico que cuenta con una calidad y disponibilidad de datos más limitada. A pesar de estas dificultades es posible utilizar ciertos enfoques para considerar la migración en las proyecciones de población.
 
-La migración se llevará a cabo en dos etapas: proyección del nivel y proyección de la estructura. Para evaluar el nivel de migración, se utilizarán los saldos migratorios al final del período, desglosados por sexo. Por otro lado, para evaluar la estructura de la migración, se utilizarán los saldos distribuidos por sexo y edad.
+La migración se llevará a cabo en dos etapas: proyección del nivel y proyección de la estructura. Para estimar el nivel de la migración se utilizarán los saldos migratorios al final del período, desglosados por sexo. Por otro lado, para estimar la estructura de la migración, se utilizarán los saldos distribuidos por sexo y edad.
 
-### Nivel de la migración internacional
+### Nivel de la migración
 
-Los saldos migratorios por sexo pueden ser estimados de manera directa mediante la diferencia entre el número de inmigrantes y el número de emigrantes, o a través de métodos indirectos. Uno de los métodos indirectos más destacados es el método residual, el cual estima la migración neta al calcular la diferencia entre la población esperada en ausencia de migración y la población observada. 
+Los saldos migratorios por sexo pueden ser estimados de manera directa a través de la diferencia entre el número de inmigrantes y emigrantes, o a través de métodos indirectos. Uno de los métodos indirectos más destacados es el método residual, el cual estima la migración neta con la diferencia entre la población esperada en ausencia de migración y la población observada.
+
+#### Estimaciones
+
+Las estimaciones anuales de los saldos migratorios se computan mediante interpolación lineal entre los años pivote. Si se dispone de datos por sexo y edad, estas interpolaciones se realizan por separado.
+
+#### Proyecciones
+
+La proyección ha sido tradicionalmente realizada utilizando al menos dos variantes conservadoras:
+
+i)  Migración que tiende a cero en el largo plazo;
+
+ii) Migración constante durante todo el periodo proyectado.
+
+Es importante destacar que en ambas variantes no se supone una inmovilidad de la población, sino un equilibrio entre las entradas y salidas, o un desequilibrio fijo para las variantes i) y ii), respectivamente.
+
+Asimismo, es frecuente utilizar una combinación de estas dos variantes, en la cual la migración disminuye a niveles bajos en algún punto intermedio de la proyección y se mantiene hasta el final, o viceversa. No obstante, es necesario evaluar caso por caso las suposiciones adoptadas y su impacto, especialmente en los primeros años de las proyecciones.
+
+Además, la trayectoria de convergencia hacia una migración nula puede ser lineal o no. Como un primer acercamiento, este manual ha adoptado un saldo migratorio que tiende a cero de manera lineal en el año 2100.
 
 ### Estructura de la migración
 
 #### Estimaciones
 
+Si el país cuenta con datos confiables sobre la migración por edad, es posible aplicar el mismo procedimiento utilizado para estimar el saldo por el método residual y así obtener estimaciones de las estructuras por edad.
+
+En el caso de países que poseen datos poco confiables sobre la migración por edad, una alternativa disponible para estimar las estructuras es utilizar el modelo propuesto por @rogers1981model utilizando las estructuras desarrolladas por @united1992.  Según este modelo, las estructuras demográficas pueden caracterizarse por un patrón "familiar" en el que existen relaciones proporcionales entre hombres y mujeres, una concentración de migrantes en las edades laborales, así como también una concentración en las edades tempranas y en las edades avanzadas.  Los otros dos patrones son "trabajador masculino" y "trabajador femenino", en los cuales la migración en edad laboral está dominada por hombres o mujeres, respectivamente.
+
 #### Proyecciones
+
+En cuanto a las proyecciones demográficas, una estrategia conservadora comúnmente utilizada consiste en mantener constante la última estructura observada a lo largo de los períodos proyectados.

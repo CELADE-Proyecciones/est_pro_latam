@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.47">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Procedimientos metodológicos para las estimaciones y proyecciones – Manual de Estimaciones y Proyecciones de Población en América Latina</title>
+<title>Manual de Estimaciones y Proyecciones de Población en América Latina - 3&nbsp; Procedimientos metodológicos para las estimaciones y proyecciones</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -48,13 +67,7 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "Sin resultados",
     "search-matching-documents-text": "documentos encontrados",
@@ -63,13 +76,14 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "resultado adicional en este documento",
     "search-more-matches-text": "resultados adicionales en este documento",
     "search-clear-button-title": "Borrar",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancelar",
     "search-submit-button-title": "Enviar",
     "search-label": "Buscar"
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -79,13 +93,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./I_nacional.html">I. Estimaciones y proyecciones a nivel nacional</a></li><li class="breadcrumb-item"><a href="./3_procedimientos.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Procedimientos metodológicos para las estimaciones y proyecciones</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./I_nacional.html">I. Estimaciones y proyecciones a nivel nacional</a></li><li class="breadcrumb-item"><a href="./3_procedimientos.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Procedimientos metodológicos para las estimaciones y proyecciones</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -94,12 +108,12 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Manual de Estimaciones y Proyecciones de Población en América Latina</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/CELADE-Proyecciones/est_pro_latam" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/CELADE-Proyecciones/est_pro_latam" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -131,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./I_nacional.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">I. Estimaciones y proyecciones a nivel nacional</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -166,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./II_subnacional.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">II. Estimaciones y proyecciones a nivel subnacional</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -199,9 +213,9 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
  <span class="menu-text">Apéndices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -223,7 +237,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -234,26 +248,26 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#nivel-de-la-fecundidad" id="toc-nivel-de-la-fecundidad" class="nav-link" data-scroll-target="#nivel-de-la-fecundidad"><span class="header-section-number">3.1.1</span> Nivel de la fecundidad</a></li>
   <li><a href="#estructura-de-la-fecundidad" id="toc-estructura-de-la-fecundidad" class="nav-link" data-scroll-target="#estructura-de-la-fecundidad"><span class="header-section-number">3.1.2</span> Estructura de la Fecundidad</a></li>
+  <li><a href="#tasas-específicas-de-fecundidad" id="toc-tasas-específicas-de-fecundidad" class="nav-link" data-scroll-target="#tasas-específicas-de-fecundidad"><span class="header-section-number">3.1.3</span> Tasas Específicas de Fecundidad</a></li>
   </ul></li>
   <li><a href="#mortalidad" id="toc-mortalidad" class="nav-link" data-scroll-target="#mortalidad"><span class="header-section-number">3.2</span> Mortalidad</a>
   <ul class="collapse">
-  <li><a href="#tablas-de-mortalidad-completas-pivotes" id="toc-tablas-de-mortalidad-completas-pivotes" class="nav-link" data-scroll-target="#tablas-de-mortalidad-completas-pivotes"><span class="header-section-number">3.2.1</span> Tablas de mortalidad completas pivotes</a></li>
-  <li><a href="#tablas-de-mortalidad-por-año-calendario" id="toc-tablas-de-mortalidad-por-año-calendario" class="nav-link" data-scroll-target="#tablas-de-mortalidad-por-año-calendario"><span class="header-section-number">3.2.2</span> Tablas de mortalidad por año calendario</a></li>
-  <li><a href="#proyección" id="toc-proyección" class="nav-link" data-scroll-target="#proyección"><span class="header-section-number">3.2.3</span> Proyección</a></li>
-  <li><a href="#procedimiento-para-los-años-de-la-covid-19" id="toc-procedimiento-para-los-años-de-la-covid-19" class="nav-link" data-scroll-target="#procedimiento-para-los-años-de-la-covid-19"><span class="header-section-number">3.2.4</span> Procedimiento para los años de la COVID-19</a></li>
+  <li><a href="#estimaciones-2" id="toc-estimaciones-2" class="nav-link" data-scroll-target="#estimaciones-2"><span class="header-section-number">3.2.1</span> Estimaciones</a></li>
+  <li><a href="#proyecciones-2" id="toc-proyecciones-2" class="nav-link" data-scroll-target="#proyecciones-2"><span class="header-section-number">3.2.2</span> Proyecciones</a></li>
+  <li><a href="#procedimiento-para-los-años-de-la-covid-19" id="toc-procedimiento-para-los-años-de-la-covid-19" class="nav-link" data-scroll-target="#procedimiento-para-los-años-de-la-covid-19"><span class="header-section-number">3.2.3</span> Procedimiento para los años de la COVID-19</a></li>
   </ul></li>
   <li><a href="#migración-internacional" id="toc-migración-internacional" class="nav-link" data-scroll-target="#migración-internacional"><span class="header-section-number">3.3</span> Migración internacional</a>
   <ul class="collapse">
-  <li><a href="#nivel-de-la-migración-internacional" id="toc-nivel-de-la-migración-internacional" class="nav-link" data-scroll-target="#nivel-de-la-migración-internacional"><span class="header-section-number">3.3.1</span> Nivel de la migración internacional</a></li>
+  <li><a href="#nivel-de-la-migración" id="toc-nivel-de-la-migración" class="nav-link" data-scroll-target="#nivel-de-la-migración"><span class="header-section-number">3.3.1</span> Nivel de la migración</a></li>
   <li><a href="#estructura-de-la-migración" id="toc-estructura-de-la-migración" class="nav-link" data-scroll-target="#estructura-de-la-migración"><span class="header-section-number">3.3.2</span> Estructura de la migración</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/CELADE-Proyecciones/est_pro_latam/edit/main/3_procedimientos.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/CELADE-Proyecciones/est_pro_latam/issues/new" class="toc-action"><i class="bi empty"></i>Informar de un problema</a></li></ul></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/CELADE-Proyecciones/est_pro_latam/edit/main/3_procedimientos.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/CELADE-Proyecciones/est_pro_latam/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./I_nacional.html">I. Estimaciones y proyecciones a nivel nacional</a></li><li class="breadcrumb-item"><a href="./3_procedimientos.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Procedimientos metodológicos para las estimaciones y proyecciones</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Procedimientos metodológicos para las estimaciones y proyecciones</span></h1>
 </div>
@@ -268,65 +282,240 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-
 </header>
-
 
 <section id="fecundidad" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="fecundidad"><span class="header-section-number">3.1</span> Fecundidad</h2>
-<p>Las estimaciones y proyecciones de fecundidad para cada año se dividen en cuatro pasos:</p>
-<ol type="i">
-<li><p>estimación del nivel general de fecundidad, usualmente medido por la tasa global de fecundidad (TGF), con base en las fuentes de datos disponibles;</p></li>
-<li><p>desglose de las tasas específicas de fecundidad correspondientes a las TGF estimadas previamente, en edades simples (si se encuentran en grupos de cinco años);</p></li>
-<li><p>estimación de la estructura relativa de la fecundidad para el período de estimación y</p></li>
-<li><p>obtención de las tasas específicas de fecundidad (TEF) estimadas.</p></li>
-</ol>
-<p>Es decir, se estima por separado el nivel y la estructura de la fecundidad, para luego combinarlos y obtener las TEF. Esta separación permite, por ejemplo, que los niveles generales de fecundidad cambien a un ritmo diferente al de la estructura de la fecundidad.</p>
+<p>Las estimaciones y proyecciones de fecundidad para cada año se dividen en cuatro pasos: i) estimación del nivel general de fecundidad, usualmente medido por la tasa global de fecundidad (TGF), con base en las fuentes de datos disponibles; ii) desglose de las tasas específicas de fecundidad, correspondientes a las TGF estimadas previamente, en edades simples si estas se encontraran en grupos de cinco años; iii) estimación de la estructura relativa de la fecundidad para el período de estimación; iv) obtención de las tasas específicas de fecundidad (TEF) estimadas v) proyecciones del nivel y estructura de la fecundidad.</p>
+<p>Es decir, se estima por separado el nivel y la estructura de la fecundidad, para luego combinarlos y obtener las TEF. &nbsp;Esta separación permite, por ejemplo, que los niveles generales de fecundidad cambien a un ritmo diferente al de su estructura.</p>
 <section id="nivel-de-la-fecundidad" class="level3" data-number="3.1.1">
 <h3 data-number="3.1.1" class="anchored" data-anchor-id="nivel-de-la-fecundidad"><span class="header-section-number">3.1.1</span> Nivel de la fecundidad</h3>
+<p>La estimación y proyección de la TGF se basa en la teoría de la transición demográfica, la cual establece que la TGF de un país experimenta un rápido descenso en los niveles de fecundidad hasta alcanzar un límite inferior en el cual se estabiliza. Este patrón puede describirse mediante una función logística, representada por la siguiente ecuación:</p>
+<p><span class="math display">\[
+TGF(t) = I + \frac{S - I}{1 + e^{(a + b \cdot t)}}
+\]</span> donde:</p>
+<p><span class="math inline">\(TGF(t)\)</span> = Tasa Global de Fecundidad en el momento <span class="math inline">\(t\)</span>;</p>
+<p><span class="math inline">\(I\)</span> = Asíntota inferior en la que la fecundidad tenderá a estabilizarse;</p>
+<p><span class="math inline">\(S\)</span> = Asíntota superior que hace referencia al valor máximo de la TGF antes del inicio de la tendencia descendente en la fecundidad;</p>
+<p><span class="math inline">\(a, b\)</span> = Parámetros a estimar;</p>
+<p><span class="math inline">\(t\)</span> = Tiempo.</p>
+<p>El ajuste de la curva logística puede llevarse a cabo con al menos dos puntos observados o un número mayor. De la misma manera, es posible realizar múltiples ajustes de curvas logísticas por tramos en la serie para obtener el resultado deseado.</p>
+<section id="estimaciones" class="level4" data-number="3.1.1.1">
+<h4 data-number="3.1.1.1" class="anchored" data-anchor-id="estimaciones"><span class="header-section-number">3.1.1.1</span> Estimaciones</h4>
+<p>Aunque la estimación y la proyección del nivel de fecundidad formen parte de un mismo proceso, es importante destacar que existe una distinción teórica entre ambos. Una vez que se han definido un conjunto de pivotes a partir de las TGF observadas, se espera que la curva logística propuesta se ajuste a dichos pivotes y proporcione una serie estimada de TGFs para el período en cuestión. En otras palabras, los datos históricos son fundamentales en el ajuste de la curva logística inicial en la fase de estimación.</p>
+</section>
+<section id="proyecciones" class="level4" data-number="3.1.1.2">
+<h4 data-number="3.1.1.2" class="anchored" data-anchor-id="proyecciones"><span class="header-section-number">3.1.1.2</span> Proyecciones</h4>
+<p>Teniendo en cuenta la serie histórica estimada y planteando una hipótesis sobre la fecundidad mínima que alcanzará esta población al final de su transición de fecundidad, se genera la serie proyectada.</p>
+</section>
+<section id="fecundidad-por-edades-simples" class="level4" data-number="3.1.1.3">
+<h4 data-number="3.1.1.3" class="anchored" data-anchor-id="fecundidad-por-edades-simples"><span class="header-section-number">3.1.1.3</span> Fecundidad por edades simples</h4>
+<p>En general, en las publicaciones más antiguas es frecuente encontrar las tasas específicas de fecundidad, o la información necesaria para calcular dichas tasas, agregadas en grupos quinquenales de edad para las mujeres de 15 a 49 años. Con el fin de obtener estimaciones y proyecciones desagregadas por edades simples puede ser necesario aplicar métodos de desagregación de las TEF para los años pivote. También, en algunas ocasiones, las tasas calculadas por edades simples pueden presentar irregularidades debido a problemas de calidad en la información. Una manera de suavizar estas tasas consiste en agruparlas y luego abrirlas por edad simple.</p>
+<p>Para el cometido anterior es recomendable la utilización y comparación de al menos tres métodos de interpolación: Spline Calibrado (CS), Beers y Sprague.</p>
+<p>El método de <span class="citation" data-cites="sprague80">Sprague (<a href="references.html#ref-sprague80" role="doc-biblioref">1880</a>)</span> usa la quinta diferencia, en tanto que los puntos interpolados forman parte de una curva suave estimada y la suma de los grupos de edad desagregados es igual a de los agregados. También, utilizando la minimización por quinta diferencia, <span class="citation" data-cites="beers1945">Beers (<a href="references.html#ref-beers1945" role="doc-biblioref">1945</a>)</span> propone un método de interpolación que relaja el requisito de que el valor del grupo de entrada se reproduzca en la suma desagregada, lo que produce curvas más suaves.</p>
+<p>En una comparación de métodos para desagregar los datos de fecundidad por edad, <span class="citation" data-cites="liu2011">Liu (<a href="references.html#ref-liu2011" role="doc-biblioref">2011</a>)</span> demuestran que Sprague y Beers presentan el mejor ajuste entre los métodos analizados. Sin embargo, ambos métodos permiten obtener tasas negativas para las edades inferiores a los 20 años y superiores a los 40, lo cual requiere ajustes adicionales propuestos por los autores. En este sentido, <span class="citation" data-cites="schmertmann2014">Schmertmann (<a href="references.html#ref-schmertmann2014" role="doc-biblioref">2014</a>)</span> propone un método específico para desglosar las estructuras de la fecundidad. El método CS encuentra una curva suave que minimiza la penalización del error al cuadrado. Dicho método utiliza tanto datos observados como datos a priori, específicamente las estructuras de fecundidad observadas en la Base de Datos de Fecundidad Humana (HFD por sus siglas en inglés) y la Base de Datos Internacional del Buró de Censos de los Estados Unidos (IDB por sus siglas en inglés). Además, la metodología propuesta prescinde del uso de grupos de edad de cinco años.</p>
+</section>
 </section>
 <section id="estructura-de-la-fecundidad" class="level3" data-number="3.1.2">
 <h3 data-number="3.1.2" class="anchored" data-anchor-id="estructura-de-la-fecundidad"><span class="header-section-number">3.1.2</span> Estructura de la Fecundidad</h3>
+<p>Una vez obtenida las TEF en edades simples, se procede a la estimación y proyección de las estructuras de fecundidad. La estructura se representa mediante la distribución relativa de las tasas específicas de fecundidad, lo cual muestra la contribución de cada edad a la TGF.</p>
+<section id="estimaciones-1" class="level4" data-number="3.1.2.1">
+<h4 data-number="3.1.2.1" class="anchored" data-anchor-id="estimaciones-1"><span class="header-section-number">3.1.2.1</span> Estimaciones</h4>
+<p>Las estimaciones anuales de la estructura pueden obtenerse mediante interpolación lineal de las estructuras observadas para el periodo.</p>
+</section>
+<section id="proyecciones-1" class="level4" data-number="3.1.2.2">
+<h4 data-number="3.1.2.2" class="anchored" data-anchor-id="proyecciones-1"><span class="header-section-number">3.1.2.2</span> Proyecciones</h4>
+<p>Para la proyección, se toma la última estructura estimada y se interpola hacia un modelo de estructura de fecundidad tardía. El CELADE ha optado ciertos modelos de fecundidad tardía propuestos por <span class="citation" data-cites="un2010">Nations (<a href="references.html#ref-un2010" role="doc-biblioref">2010</a>)</span>. En el Anexo 1 se presentan dichos modelos, así como su desglose por edades simples.</p>
+<p>Con el fin de asegurar que los cambios en las estructuras de fecundidad sean graduales, se asume que la población en cuestión alcanzará el modelo de fecundidad tardía en un futuro distante. El momento en que esto ocurra dependerá de la última estructura estimada.</p>
+<p>Un enfoque alternativo ha sido desarrollado por <span class="citation" data-cites="sevickova2016">H. Ševčíková et&nbsp;al. (<a href="references.html#ref-sevickova2016" role="doc-biblioref">2016</a>)</span>, en el cual la estructura de la fecundidad converge hacia un patrón global de fecundidad tardía, aunque no necesariamente lo alcanza. La estructura a futuro es el resultado de una media ponderada de dos proyecciones preliminares: i) la proyección que supone que la estructura converge hacia la estructura global de fecundidad tardía <span class="math inline">\((p_t^I)\)</span>; y ii) la proyección que supone que la tendencia observada en la estructura de fecundidad del país continúa indefinidamente <span class="math inline">\((p_t^{II})\)</span>. La evolución de la estructura también depende del momento en que la tasa global de fecundidad alcance la fase III de la transición de la fecundidad.</p>
+<p>El modelo se define como:</p>
+<p><span class="math display">\[
+\text{logit}(p_t) = \tau_t \cdot \text{logit}(p_t^I) + (1 - \tau_t) \cdot \text{logit}(p_t^{II})
+\]</span></p>
+<p><span class="math display">\[
+\tau_t = \frac{(t - t_r)}{(t_g - t_r)}
+\]</span></p>
+<p>Donde <span class="math inline">\(t\)</span> es el año proyectado, <span class="math inline">\(t_r\)</span> es el año de la última estructura observada y <span class="math inline">\(t_g\)</span> es el año en que el país alcanza la norma. El procedimiento detallado para estimar <span class="math inline">\(t_g\)</span> se puede encontrar en <span class="citation" data-cites="sevickova2016">H. Ševčíková et&nbsp;al. (<a href="references.html#ref-sevickova2016" role="doc-biblioref">2016</a>)</span>. Este modelo proyecta una transición de la estructura más suave y una buena predicción del número medio de hijos que tendrá una mujer a lo largo de su vida reproductiva <span class="citation" data-cites="bohk-ewald2018">(<a href="references.html#ref-bohk-ewald2018" role="doc-biblioref">Bohk-Ewald, Li, y Myrskylä 2018</a>)</span>. El método está implementado por la función <code>project.pasfr()</code> del paquete <code>bayesPop</code> <span class="citation" data-cites="sevickovaHana2016">(<a href="references.html#ref-sevickovaHana2016" role="doc-biblioref">Hana Ševčíková y Raftery 2016</a>)</span>.</p>
+</section>
+</section>
+<section id="tasas-específicas-de-fecundidad" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="tasas-específicas-de-fecundidad"><span class="header-section-number">3.1.3</span> Tasas Específicas de Fecundidad</h3>
+<p>Finalmente, se aplican las distribuciones relativas obtenidas previamente a las TGF proyectadas y se obtienen las tasas específicas de fecundidad estimadas y proyectadas.</p>
 </section>
 </section>
 <section id="mortalidad" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="mortalidad"><span class="header-section-number">3.2</span> Mortalidad</h2>
-<p>Las estimaciones de la mortalidad se dividen en tres pasos:</p>
-<ol type="1">
-<li>la construcción de las tablas de mortalidad completas años pivotes,</li>
-<li>la construcción de tablas de mortalidad anualizadas y</li>
-<li>el cálculo de las relaciones de supervivencia por edad para cada año calendario. Todos los procedimientos deben llevarse a cabo por separado para cada sexo.</li>
-</ol>
-<section id="tablas-de-mortalidad-completas-pivotes" class="level3" data-number="3.2.1">
-<h3 data-number="3.2.1" class="anchored" data-anchor-id="tablas-de-mortalidad-completas-pivotes"><span class="header-section-number">3.2.1</span> Tablas de mortalidad completas pivotes</h3>
+<section id="estimaciones-2" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="estimaciones-2"><span class="header-section-number">3.2.1</span> Estimaciones</h3>
+<p>Las estimaciones de la mortalidad se dividen en tres etapas: 1) la construcción de las tablas de mortalidad completas para los años pivotes, 2) la interpolación de las tablas de mortalidad a años calendario; y 3) el cálculo de las relaciones de supervivencia por edad para cada año calendario. &nbsp;Todos los procedimientos deben llevarse a cabo por separado para cada sexo.</p>
+<section id="tablas-de-mortalidad-por-edad-simple-pivotes" class="level4" data-number="3.2.1.1">
+<h4 data-number="3.2.1.1" class="anchored" data-anchor-id="tablas-de-mortalidad-por-edad-simple-pivotes"><span class="header-section-number">3.2.1.1</span> Tablas de mortalidad por edad simple pivotes</h4>
+<p>El primer paso para generar las tablas de mortalidad completas consiste en el cálculo de las tasas de mortalidad por edades y sexo para los años censales. Si el país cuenta con datos de mortalidad confiables, las tasas específicas de mortalidad anuales se calcularán de la siguiente manera:</p>
+<p><span class="math display">\[_{n}m_x^Z = \frac{_{n}D_x^Z}{_{n}N_x^{(30 - VI - Z)}}\]</span></p>
+<p>El numerador <span class="math inline">\(_{n}D_x^Z\)</span> es el número de muertes ocurridas en el año <span class="math inline">\(Z\)</span> entre las edades exactas <span class="math inline">\(x\)</span> y <span class="math inline">\(x+n\)</span>, mientras que el denominador <span class="math inline">\(_{n}N_x^{(30 - VI - Z)}\)</span> es la población entre las mismas edades exactas en la mitad del año censal. Este último es un indicador del tiempo de exposición de la población al riesgo de muerte.</p>
+<p>Todos los ajustes que afecten directamente a las tasas de mortalidad deben realizarse en esta etapa. Estos ajustes incluyen la aplicación de métodos de completitud de defunciones (DDM por sus siglas en inglés), suavización de las tasas de mortalidad, ajustes de población, entre otros. Una vez completados todos los ajustes, se utiliza la <span class="math inline">\(_{n}m_x\)</span> para generar la tabla de mortalidad.</p>
+<p>En caso de que se construya inicialmente una tabla de mortalidad abreviada, por grupos quinquenales de edad, se requieren métodos adicionales para abrirla a edades simples. Entonces la desagregación de la tabla de mortalidad abreviada y la extrapolación del grupo abierto pueden llevarse a cabo mediante dos conjuntos de métodos: 1) métodos no paramétricos y 2) métodos paramétricos. La clasificación de estos métodos como paramétricos o no paramétricos se refiere a la presencia o ausencia de una ley de mortalidad subyacente en el método utilizado.</p>
+<p>Este manual considera la comparación entre un método paramétrico y un no paramétrico. El método paramétrico tomado en consideración es el de Heligman-Pollard, que permite ajustar una ley de mortalidad para todas las edades a través de cierto número de parámetros. El método no paramétrico utilizado es el <em>Penalized Composite Link Model</em> (PCLM), que ha demostrado un mejor desempeño en el desglose y una mayor flexibilidad para tratar la extrapolación de grupos abiertos en comparación con otros métodos no paramétricos <span class="citation" data-cites="rizzi2015">(<a href="references.html#ref-rizzi2015" role="doc-biblioref">Rizzi, Gampe, y Eilers 2015</a>)</span>.</p>
+<section id="comparación-de-los-métodos" class="level5" data-number="3.2.1.1.1">
+<h5 data-number="3.2.1.1.1" class="anchored" data-anchor-id="comparación-de-los-métodos"><span class="header-section-number">3.2.1.1.1</span> Comparación de los métodos</h5>
+<p>El <em>Penalized Composite Link Model</em>, propuesto por <span class="citation" data-cites="rizzi2015">Rizzi, Gampe, y Eilers (<a href="references.html#ref-rizzi2015" role="doc-biblioref">2015</a>)</span>, es un método no paramétrico para el desglose de datos. Su único supuesto es que la distribución subyacente es suave. En otras palabras, los datos agregados observados son una indicación indirecta de la distribución subyacente, la cual puede estimarse a través de los propios datos sin necesidad de recurrir a una forma predefinida. Este método se basa en el modelo de <em>Composite Link</em>, al cual se le añade un término de penalización para asegurar la suavidad de la distribución estimada. La estimación de la distribución latente se realiza mediante la maximización de la verosimilitud penalizada, utilizando el criterio de minimización de Akaike (AIC).</p>
+<p>Además, el método puede tratar de manera flexible el intervalo abierto y permite añadir información adicional sobre cómo estimar dicho intervalo. En este caso, se emplearon dos enfoques: Makeham y Kannisto. Ambos procedimientos pueden comprenderse a partir del modelo logístico definido por la siguiente función:</p>
+<p><span class="math display">\[m_x = c + \frac{ae^{bx}}{1 + \alpha e^{bx}}\]</span></p>
+<p>El enfoque de Kannisto predice que la mortalidad en edades avanzadas se acerca más a una función lineal con respecto a la edad, mientras que Makeham ajusta una función logística cuando alfa es igual a cero, lo que implica un crecimiento mayor en edades más avanzadas en comparación con Kannisto.</p>
+<p>Por otro lado, Heligman y Pollard (1980) es un método paramétrico en el que se predefine una expresión matemática para la graduación de los patrones de mortalidad por edad. La desagregación de la tabla de vida con este método se realiza para ajustando las tasas de mortalidad <span class="math inline">\((_{n}m_x)\)</span> de los grupos quinquenales a este patrón de graduación predefinido:</p>
+<p><span class="math display">\[
+\frac{q_x}{p_x} = A^{(x+b)^c} + De^{-E(\ln x - \ln F)^2} + GH^x
+\]</span> Esta forma funcional está compuesta por tres términos que describen los principales comportamientos de la mortalidad a lo largo de las distintas edades. En primer lugar, se observa un marcado descenso en la mortalidad infantil. Luego, se evidencia un aumento en la mortalidad debido a causas externas y en la mortalidad materna en edades más tempranas. Por último, se aprecia un patrón logístico en las edades más avanzadas.</p>
 </section>
-<section id="tablas-de-mortalidad-por-año-calendario" class="level3" data-number="3.2.2">
-<h3 data-number="3.2.2" class="anchored" data-anchor-id="tablas-de-mortalidad-por-año-calendario"><span class="header-section-number">3.2.2</span> Tablas de mortalidad por año calendario</h3>
 </section>
-<section id="proyección" class="level3" data-number="3.2.3">
-<h3 data-number="3.2.3" class="anchored" data-anchor-id="proyección"><span class="header-section-number">3.2.3</span> Proyección</h3>
+<section id="tablas-de-mortalidad-por-edad-simple-y-año-calendario" class="level4" data-number="3.2.1.2">
+<h4 data-number="3.2.1.2" class="anchored" data-anchor-id="tablas-de-mortalidad-por-edad-simple-y-año-calendario"><span class="header-section-number">3.2.1.2</span> Tablas de mortalidad por edad simple y año calendario</h4>
+<p>Una vez que se hayan obtenido las tablas de mortalidad para los años pivotes en edades simples, se procede a estimar las tablas de mortalidad para cada año. En el caso de países con restricciones en la disponibilidad de series históricas y períodos regulares, una alternativa es aplicar una modificación del método Lee-Carter desarrollado por <span class="citation" data-cites="li2004">Li, Lee, y Tuljapurkar (<a href="references.html#ref-li2004" role="doc-biblioref">2004</a>)</span>, conocido como <em>Limited Lee-Carter</em>. El modelo adaptado sigue la misma ecuación básica que el modelo original.</p>
+<p><span class="math display">\[ \log[m_{x,t}] = a_x + b_x k_t + \epsilon_{x,t} \]</span></p>
+<p>Donde <span class="math inline">\(a_x\)</span> describe el patrón medio de mortalidad por edad, <span class="math inline">\(b_x\)</span> el perfil medio de variación por edad cuando varía el nivel <span class="math inline">\(k_t\)</span> de mortalidad y <span class="math inline">\(\epsilon_{x,t}\)</span> es un término de error con media 0 y varianza <span class="math inline">\(\sigma_\epsilon^2\)</span>, que refleja la parte no captada por el modelo.</p>
+<p>El modelo establece la suposición de que <span class="math inline">\(k_t\)</span> sigue necesariamente un <em>random walk with drift</em>, y es necesario que la mortalidad disminuya de forma estable durante el periodo histórico utilizado. Este supuesto implica que el mejor predictor de la tasa de mortalidad de los períodos siguientes es la mortalidad actual más un término de desvío, dado por el cambio lineal en el nivel de mortalidad entre los períodos <span class="math inline">\(t\)</span> y <span class="math inline">\(t-1\)</span>. De este modo, un conjunto de al menos 3 puntos de observación puede proporcionar todos los parámetros del modelo.</p>
+<p>El método es útil para estimar las tablas de mortalidad de cada año a partir de las tablas pivotes. Sin embargo, es importante tener en cuenta que la inclusión de períodos con alteraciones significativas en los procesos de generación de la serie <span class="math inline">\(m_x\)</span> puede influir en los parámetros promedio. Además, ciertas perturbaciones históricas donde se ha observado un aumento en la mortalidad, como el período de Covid-19, hacen que se viole el supuesto de que <span class="math inline">\(k_t\)</span> sigue un <em>random walk with drift</em>. En este sentido, puede resultar necesario utilizar intervalos fragmentados para obtener una serie de mortalidad que se ajuste mejor a los supuestos del modelo.</p>
+<p>Las estimaciones se llevan a cabo mediante la interpolación de los años pivotes, mientras que la proyección se puede realizar aplicando el método a una tabla límite de mortalidad que tenga una esperanza de vida al nacer superior a la última estimación.</p>
 </section>
-<section id="procedimiento-para-los-años-de-la-covid-19" class="level3" data-number="3.2.4">
-<h3 data-number="3.2.4" class="anchored" data-anchor-id="procedimiento-para-los-años-de-la-covid-19"><span class="header-section-number">3.2.4</span> Procedimiento para los años de la COVID-19</h3>
+<section id="matriz-de-relación-de-supervivencia" class="level4" data-number="3.2.1.3">
+<h4 data-number="3.2.1.3" class="anchored" data-anchor-id="matriz-de-relación-de-supervivencia"><span class="header-section-number">3.2.1.3</span> Matriz de Relación de supervivencia</h4>
+<p>La matriz de supervivencia —correspondiente a cada año calendario y edades simples— se empleará como elemento de entrada del componente de mortalidad en la proyección de la población mediante el MCDC. Para los menores de un año, encontramos:</p>
+<p><span class="math display">\[b = \frac{L(0)}{l(0)}\]</span> De uno a noventa y nueve años la relación de supervivencia de la población entre las edades exactas <span class="math inline">\(x\)</span> y <span class="math inline">\(x-1\)</span> se expresa como:</p>
+<p><span class="math display">\[
+_1S_x = \frac{L(x)}{L(x-1)}
+\]</span></p>
+<p>Para el penúltimo grupo de edad:</p>
+<p><span class="math display">\[
+_nS_x = \frac{T_{x+n}}{T_x}
+\]</span> Para el último grupo de edad (grupo abierto), no se calcula la razón de supervivencia.</p>
+</section>
+</section>
+<section id="proyecciones-2" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="proyecciones-2"><span class="header-section-number">3.2.2</span> Proyecciones</h3>
+<p>La proyección de la mortalidad se divide en tres etapas. La primera consiste en la proyección del nivel de mortalidad por sexo (medido por la esperanza de vida al nacer <span class="math inline">\(e_0\)</span>), la segunda es la proyección de la estructura de la mortalidad (medida por las probabilidades de muerte por sexo y edad) y el tercer paso es construir las tablas de mortalidad correspondientes, ajustando las expectativas de vida de las dos primeras etapas. Al final se obtienen las relaciones de supervivencia correspondientes al período de proyección.</p>
+<section id="proyección-del-nivel-de-la-mortalidad" class="level4" data-number="3.2.2.1">
+<h4 data-number="3.2.2.1" class="anchored" data-anchor-id="proyección-del-nivel-de-la-mortalidad"><span class="header-section-number">3.2.2.1</span> Proyección del nivel de la mortalidad</h4>
+<p>La esperanza de vida al nacer se proyecta por separado para hombres y mujeres, utilizando una curva logística. Esta metodología supone que el aumento de la esperanza de vida disminuye gradualmente a medida que se reduce el nivel de mortalidad.</p>
+<p><span class="math display">\[
+e(0,t) = K_1 + \frac{K_2}{1 + e^{(a + bt)}}
+\]</span></p>
+<p>Donde: <span class="math inline">\(e(0,t)\)</span> = las esperanzas de vida al nacer en el momento <span class="math inline">\(t\)</span>;</p>
+<p><span class="math inline">\(K_1\)</span> = la asíntota inferior;</p>
+<p><span class="math inline">\(K_1 + K_2\)</span> = la asíntota superior;</p>
+<p><span class="math inline">\(a, b\)</span> = los parámetros; y</p>
+<p><span class="math inline">\(t\)</span> = el tiempo.</p>
+<p>El sistema de ecuaciones se resuelve fácilmente con dos observaciones en el tiempo. Se recomienda utilizar como pivotes la esperanzas de vida estimadas a partir de los dos últimos censos.</p>
+<p>Las asíntotas, por su parte, son valores teóricos. Información de los límites inferior y superior propuestos para América Latina se pueden consultar <span class="citation" data-cites="bay2012">Bay (<a href="references.html#ref-bay2012" role="doc-biblioref">2012</a>)</span>. No obstante, para el límite superior, se recomienda utilizar la esperanza de vida de las tablas límite que se verán en el siguiente paso.</p>
+<p>Es importante considerar el ritmo de incremento de las e0 por sexo, así como la evolución del diferencial por sexo. Dependiendo del aumento entre las <span class="math inline">\(e_0\)</span> calculadas para los 2 últimos censos, existe la posibilidad de no utilizar el penúltimo censo sino uno anterior, esto para desacelerar el aumento de la e0. Adicionalmente, si el diferencial por sexo proyectado es inconsistente, proyectamos las e0 de mujeres y el diferencial de e0 respecto a los hombres, para obtener la e0 de hombres a partir de las e0 de mujeres menos el diferencial.</p>
+</section>
+<section id="proyección-de-la-estructura-de-la-mortalidad" class="level4" data-number="3.2.2.2">
+<h4 data-number="3.2.2.2" class="anchored" data-anchor-id="proyección-de-la-estructura-de-la-mortalidad"><span class="header-section-number">3.2.2.2</span> Proyección de la estructura de la mortalidad</h4>
+<p>La estructura se proyecta mediante la interpolación lineal de la última estructura observada hacia una tabla límite de mortalidad que presenta una esperanza de vida al nacer superior a la proyectada para el último año. La interpolación se realiza utilizando la siguiente ecuación:</p>
+<p><span class="math display">\[f_1 = \frac{e0_{(p,t)} - e0_0}{e0_{lim} - e0_0}\]</span></p>
+<p><span class="math display">\[nqx_t = (1 - f_1) \cdot nqx_0 + f_1 \cdot nqx_{lim}\]</span></p>
+<p>Donde: <span class="math inline">\(e0_0\)</span> = la esperanza de vida al nacer de la última observación;</p>
+<p><span class="math inline">\(e0_{(p,t)}\)</span> = la esperanza de vida al nacer proyectada en el paso uno para el tiempo t;</p>
+<p><span class="math inline">\(e0_{lim}\)</span> = la esperanza de vida al nacer de la tabla límite;</p>
+<p><span class="math inline">\(nqx_0\)</span> = la probabilidad de muerte entre x y x+n años de la última observación;</p>
+<p><span class="math inline">\(nqx_{lim}\)</span> = la probabilidad de muerte entre x y x+n años de la tabla límite;</p>
+<p><span class="math inline">\(nqx_t\)</span> = la probabilidad de muerte entre x y x+n años interpolada para el año t.</p>
+<p>Las probabilidades de muerte interpoladas se utilizarán con el fin de generar las tablas de mortalidad por edad simple. Para tal fin, también es necesario obtener —mediante interpolación— las esperanzas de vida a los 100 años, así como el tiempo medio vivido por aquellos que fallecieron en las edades de 1 a 4 años. Este procedimiento se lleva a cabo utilizando los mismos factores de interpolación previamente utilizados.</p>
+</section>
+<section id="ajuste-de-las-esperanzas-de-vida" class="level4" data-number="3.2.2.3">
+<h4 data-number="3.2.2.3" class="anchored" data-anchor-id="ajuste-de-las-esperanzas-de-vida"><span class="header-section-number">3.2.2.3</span> Ajuste de las esperanzas de vida</h4>
+<p>Las tablas de mortalidad obtenidas en la segunda etapa no necesariamente reflejan la misma esperanza de vida al nacer que se proyecta en la etapa 1, por lo tanto, es necesario realizar un ajuste para reducir esta diferencia hasta que se aproxime a cero. Este proceso de ajuste se realiza de manera iterativa, permitiendo repeticiones indefinidas. Sin embargo, resultados empíricos indican que alrededor de 30 iteraciones suelen generar una convergencia satisfactoria. El proceso iterativo se realiza de la siguiente manera:</p>
+<p><span class="math display">\[f_{\text{adj}} = \frac{e0_{2,t,i-1x}}{e0_{(p,t)}}\]</span></p>
+<p><span class="math display">\[nqx_{(t,i)} = nqx_{t,i-)} \cdot f_{\text{adj}}, \quad \text{para } x &gt; 1\]</span></p>
+<p>Donde:</p>
+<p><span class="math inline">\(e0_{2,t,i-1}\)</span> = la esperanza de vida al nacer calculada para el tiempo t resultante de la iteración i-1;</p>
+<p><span class="math inline">\(e0_{p,t}\)</span> = la esperanza de vida al nacer proyectada en el paso uno para el tiempo t;</p>
+<p><span class="math inline">\(f_{\text{adj}}\)</span> = el factor de ajuste;</p>
+<p><span class="math inline">\(nqx_{t,i-1}\)</span> = la probabilidad de muerte entre x y x+n años calculada en la iteración i-1;</p>
+<p><span class="math inline">\(nqx_{t,i}\)</span> = la probabilidad de muerte entre x y x+n años resultante de la iteración i.</p>
+<p>La corrección de las probabilidades de muerte no se aplica para la edad cero. En cada iteración, se genera una nueva tabla de vida y se ejecuta el procedimiento hasta que la discrepancia en la esperanza de vida calculada y original sea próxima a cero.</p>
+</section>
+</section>
+<section id="procedimiento-para-los-años-de-la-covid-19" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="procedimiento-para-los-años-de-la-covid-19"><span class="header-section-number">3.2.3</span> Procedimiento para los años de la COVID-19</h3>
+<p>Pendiente…</p>
 </section>
 </section>
 <section id="migración-internacional" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="migración-internacional"><span class="header-section-number">3.3</span> Migración internacional</h2>
-<p>A diferencia de la mortalidad y la fecundidad, la migración se ve fuertemente influenciada por los cambios circunstanciales tanto internos como externos al país. Este comportamiento hace que la migración sea especialmente susceptible a variaciones imprevisibles sin una tendencia clara. Además, cabe destacar que la migración es el componente de la población que cuenta con una calidad y disponibilidad de datos más limitada. A pesar de esta dificultad, es posible utilizar ciertos enfoques para considerar la migración en las proyecciones de población.</p>
-<p>La migración se llevará a cabo en dos etapas: proyección del nivel y proyección de la estructura. Para evaluar el nivel de migración, se utilizarán los saldos migratorios al final del período, desglosados por sexo. Por otro lado, para evaluar la estructura de la migración, se utilizarán los saldos distribuidos por sexo y edad.</p>
-<section id="nivel-de-la-migración-internacional" class="level3" data-number="3.3.1">
-<h3 data-number="3.3.1" class="anchored" data-anchor-id="nivel-de-la-migración-internacional"><span class="header-section-number">3.3.1</span> Nivel de la migración internacional</h3>
-<p>Los saldos migratorios por sexo pueden ser estimados de manera directa mediante la diferencia entre el número de inmigrantes y el número de emigrantes, o a través de métodos indirectos. Uno de los métodos indirectos más destacados es el método residual, el cual estima la migración neta al calcular la diferencia entre la población esperada en ausencia de migración y la población observada.&nbsp;</p>
+<p>A diferencia de la mortalidad y la fecundidad, la migración se ve fuertemente influenciada por los cambios coyunturales tanto internos como externos al país. Este comportamiento hace que la migración sea especialmente susceptible a variaciones imprevisibles que no necesariamente siguen una tendencia clara. Además, es importante destacar que la migración es el componente demográfico que cuenta con una calidad y disponibilidad de datos más limitada. A pesar de estas dificultades es posible utilizar ciertos enfoques para considerar la migración en las proyecciones de población.</p>
+<p>La migración se llevará a cabo en dos etapas: proyección del nivel y proyección de la estructura. Para estimar el nivel de la migración se utilizarán los saldos migratorios al final del período, desglosados por sexo. Por otro lado, para estimar la estructura de la migración, se utilizarán los saldos distribuidos por sexo y edad.</p>
+<section id="nivel-de-la-migración" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="nivel-de-la-migración"><span class="header-section-number">3.3.1</span> Nivel de la migración</h3>
+<p>Los saldos migratorios por sexo pueden ser estimados de manera directa a través de la diferencia entre el número de inmigrantes y emigrantes, o a través de métodos indirectos. Uno de los métodos indirectos más destacados es el método residual, el cual estima la migración neta con la diferencia entre la población esperada en ausencia de migración y la población observada.</p>
+<section id="estimaciones-3" class="level4" data-number="3.3.1.1">
+<h4 data-number="3.3.1.1" class="anchored" data-anchor-id="estimaciones-3"><span class="header-section-number">3.3.1.1</span> Estimaciones</h4>
+<p>Las estimaciones anuales de los saldos migratorios se computan mediante interpolación lineal entre los años pivote. Si se dispone de datos por sexo y edad, estas interpolaciones se realizan por separado.</p>
+</section>
+<section id="proyecciones-3" class="level4" data-number="3.3.1.2">
+<h4 data-number="3.3.1.2" class="anchored" data-anchor-id="proyecciones-3"><span class="header-section-number">3.3.1.2</span> Proyecciones</h4>
+<p>La proyección ha sido tradicionalmente realizada utilizando al menos dos variantes conservadoras:</p>
+<ol type="i">
+<li><p>Migración que tiende a cero en el largo plazo;</p></li>
+<li><p>Migración constante durante todo el periodo proyectado.</p></li>
+</ol>
+<p>Es importante destacar que en ambas variantes no se supone una inmovilidad de la población, sino un equilibrio entre las entradas y salidas, o un desequilibrio fijo para las variantes i) y ii), respectivamente.</p>
+<p>Asimismo, es frecuente utilizar una combinación de estas dos variantes, en la cual la migración disminuye a niveles bajos en algún punto intermedio de la proyección y se mantiene hasta el final, o viceversa. No obstante, es necesario evaluar caso por caso las suposiciones adoptadas y su impacto, especialmente en los primeros años de las proyecciones.</p>
+<p>Además, la trayectoria de convergencia hacia una migración nula puede ser lineal o no. Como un primer acercamiento, este manual ha adoptado un saldo migratorio que tiende a cero de manera lineal en el año 2100.</p>
+</section>
 </section>
 <section id="estructura-de-la-migración" class="level3" data-number="3.3.2">
 <h3 data-number="3.3.2" class="anchored" data-anchor-id="estructura-de-la-migración"><span class="header-section-number">3.3.2</span> Estructura de la migración</h3>
-<section id="estimaciones" class="level4" data-number="3.3.2.1">
-<h4 data-number="3.3.2.1" class="anchored" data-anchor-id="estimaciones"><span class="header-section-number">3.3.2.1</span> Estimaciones</h4>
+<section id="estimaciones-4" class="level4" data-number="3.3.2.1">
+<h4 data-number="3.3.2.1" class="anchored" data-anchor-id="estimaciones-4"><span class="header-section-number">3.3.2.1</span> Estimaciones</h4>
+<p>Si el país cuenta con datos confiables sobre la migración por edad, es posible aplicar el mismo procedimiento utilizado para estimar el saldo por el método residual y así obtener estimaciones de las estructuras por edad.</p>
+<p>En el caso de países que poseen datos poco confiables sobre la migración por edad, una alternativa disponible para estimar las estructuras es utilizar el modelo propuesto por <span class="citation" data-cites="rogers1981model">Rogers y Castro (<a href="references.html#ref-rogers1981model" role="doc-biblioref">1981</a>)</span> utilizando las estructuras desarrolladas por <span class="citation" data-cites="united1992">United Nations (<a href="references.html#ref-united1992" role="doc-biblioref">1992</a>)</span>. &nbsp;Según este modelo, las estructuras demográficas pueden caracterizarse por un patrón “familiar” en el que existen relaciones proporcionales entre hombres y mujeres, una concentración de migrantes en las edades laborales, así como también una concentración en las edades tempranas y en las edades avanzadas. &nbsp;Los otros dos patrones son “trabajador masculino” y “trabajador femenino”, en los cuales la migración en edad laboral está dominada por hombres o mujeres, respectivamente.</p>
 </section>
-<section id="proyecciones" class="level4" data-number="3.3.2.2">
-<h4 data-number="3.3.2.2" class="anchored" data-anchor-id="proyecciones"><span class="header-section-number">3.3.2.2</span> Proyecciones</h4>
+<section id="proyecciones-4" class="level4" data-number="3.3.2.2">
+<h4 data-number="3.3.2.2" class="anchored" data-anchor-id="proyecciones-4"><span class="header-section-number">3.3.2.2</span> Proyecciones</h4>
+<p>En cuanto a las proyecciones demográficas, una estrategia conservadora comúnmente utilizada consiste en mantener constante la última estructura observada a lo largo de los períodos proyectados.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-bay2012" class="csl-entry" role="listitem">
+Bay, Guiomar. 2012. <span>«Reflexiones sobre las estimaciones y proyecciones de población en América Latina»</span>. <em>Series e-investigaciones ALAP</em> 2. <a href="http://zotero.org/users/2112629/items/MYH9IXV9">http://zotero.org/users/2112629/items/MYH9IXV9</a>.
+</div>
+<div id="ref-beers1945" class="csl-entry" role="listitem">
+Beers, William. 1945. <span>«Modified-interpolation formula that minimize fourth differences»</span>. <em>The record of the American Institute of Actuaries</em> 34: 14-20. <a href="http://zotero.org/users/2112629/items/VER8PY9K">http://zotero.org/users/2112629/items/VER8PY9K</a>.
+</div>
+<div id="ref-bohk-ewald2018" class="csl-entry" role="listitem">
+Bohk-Ewald, Christina, Peipei Li, y Mikko Myrskylä. 2018. <span>«Forecast accuracy hardly improves with method complexity when completing fertility»</span>. <em>Proceedings of the National Academy of Sciences</em> 115 (37): 9187-92. <a href="http://zotero.org/users/2112629/items/KTJ2RZRI">http://zotero.org/users/2112629/items/KTJ2RZRI</a>.
+</div>
+<div id="ref-li2004" class="csl-entry" role="listitem">
+Li, Ning, Ronald D. Lee, y Shripad Tuljapurkar. 2004. <span>«Stochastic Forecasting of Mortality and Fertility»</span>. <em>Demography</em> 41 (1): 1-21. <a href="http://zotero.org/users/2112629/items/RPVPA4XS">http://zotero.org/users/2112629/items/RPVPA4XS</a>.
+</div>
+<div id="ref-liu2011" class="csl-entry" role="listitem">
+Liu, et al. 2011. <span>«Graduation methods to derive age-specific fertility rates from abridged data: a comparison of 10 methods using HFD data. Presentation at the First HFD Symposium, MPIDR, Rostock, Germany»</span>. En. <a href="http://zotero.org/users/2112629/items/SZX6ITEV">http://zotero.org/users/2112629/items/SZX6ITEV</a>.
+</div>
+<div id="ref-un2010" class="csl-entry" role="listitem">
+Nations, United. 2010. <em>Methodology of the United Nations Population Estimates and Projections</em>. New York: United Nations. <a href="http://population.un.org/wpp/">http://population.un.org/wpp/</a>.
+</div>
+<div id="ref-rizzi2015" class="csl-entry" role="listitem">
+Rizzi, Silvia, Jutta Gampe, y Paul H. C. Eilers. 2015. <span>«Efficient estimation of smooth distributions from coarsely grouped data»</span>. <em>American Journal of Epidemiology</em> 182 (2): 138-47. <a href="http://zotero.org/users/2112629/items/PZDU7FKF">http://zotero.org/users/2112629/items/PZDU7FKF</a>.
+</div>
+<div id="ref-rogers1981model" class="csl-entry" role="listitem">
+Rogers, Andrei, y Luis J. Castro. 1981. <span>«Model migration schedules»</span>. International Institute for Applied Systems Analysis. <a href="http://pure.iiasa.ac.at/id/eprint/1571/">http://pure.iiasa.ac.at/id/eprint/1571/</a>.
+</div>
+<div id="ref-schmertmann2014" class="csl-entry" role="listitem">
+Schmertmann, Carl. 2014. <span>«Interpolating and projecting age-specific fertility rates with the R package bayesPop»</span>. <em>Revista Brasileira de Estudos de População</em> 31 (1): 151-64. <a href="http://zotero.org/users/2112629/items/65CGWUXV">http://zotero.org/users/2112629/items/65CGWUXV</a>.
+</div>
+<div id="ref-sevickova2016" class="csl-entry" role="listitem">
+Ševčíková, H. et&nbsp;al. 2016. <span>«Probabilistic Population Projections»</span>. En <em>World Population Prospects: The 2015 Revision</em>. United Nations. <a href="http://zotero.org/users/2112629/items/28DPQR58">http://zotero.org/users/2112629/items/28DPQR58</a>.
+</div>
+<div id="ref-sevickovaHana2016" class="csl-entry" role="listitem">
+Ševčíková, Hana, y Adrian E. Raftery. 2016. <span>«bayesPop: Probabilistic Population Projections»</span>. <em>Journal of Statistical Software</em> 75 (5): 1-29. <a href="https://doi.org/10.18637/jss.v075.i05">https://doi.org/10.18637/jss.v075.i05</a>.
+</div>
+<div id="ref-sprague80" class="csl-entry" role="listitem">
+Sprague, William. 1880. <span>«Title of the Article»</span>. <em>Journal Name</em> 1 (1): 1-10. <a href="http://zotero.org/users/2112629/items/EKYZFSLD">http://zotero.org/users/2112629/items/EKYZFSLD</a>.
+</div>
+<div id="ref-united1992" class="csl-entry" role="listitem">
+United Nations. 1992. <em>World Population Prospects: The 1992 Revision</em>. New York: United Nations. <a href="http://zotero.org/users/2112629/items/3HXHQH59">http://zotero.org/users/2112629/items/3HXHQH59</a>.
+</div>
+</div>
 </section>
 </section>
 </section>
@@ -367,7 +556,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -399,50 +599,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/www\.cepal\.org\/es\/acerca-de-poblacion-y-desarrollo");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -452,17 +613,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -474,130 +626,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
+      return note.innerHTML;
     });
   }
       let selectedAnnoteEl;
@@ -641,7 +670,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -667,32 +695,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -754,12 +756,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./2_datos_concil.html" class="pagination-link" aria-label="Datos, estimaciones, conciliación y proyección">
+      <a href="./2_datos_concil.html" class="pagination-link">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Datos, estimaciones, conciliación y proyección</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./4_ejem_nac.html" class="pagination-link" aria-label="Ejemplo de Aplicación en Excel y R">
+      <a href="./4_ejem_nac.html" class="pagination-link">
         <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ejemplo de Aplicación en Excel y R</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -767,18 +769,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>La presente publicación fue preparada por Guiomar Bay, Helena Cruz Castanheira, […].</p>
-</div>   
+    <div class="nav-footer-left">La presente publicación fue preparada por Guiomar Bay, Helena Cruz Castanheira, […].</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/CELADE-Proyecciones/est_pro_latam/edit/main/3_procedimientos.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/CELADE-Proyecciones/est_pro_latam/issues/new" class="toc-action"><i class="bi empty"></i>Informar de un problema</a></li></ul></div></div>
-    <div class="nav-footer-right">
-<p>Este manual fue hecho en <a href="https://quarto.org/">Quarto</a>.</p>
-</div>
+    </div>
+    <div class="nav-footer-right">Este manual fue hecho en <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
-
 
 
 
